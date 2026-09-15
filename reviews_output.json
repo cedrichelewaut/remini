@@ -1,0 +1,51 @@
+{
+  "app": {
+    "play_id": "com.bigwinepot.nwdn.international",
+    "appstore_id": "1470373330"
+  },
+  "total_reviews_fetched": 1500,
+  "feature_requests": {
+    "other / uncategorized": [
+      {
+        "source": "app_store",
+        "rating": 2,
+        "date": "2026-08-07T07:19:00-07:00",
+        "text": "Why do I need a network/wifi to use the app?\n\nWhat’s worse is why do I need anything to save a damn picture to my phone?!😡"
+      },
+      {
+        "source": "app_store",
+        "rating": 2,
+        "date": "2026-06-23T06:08:37-07:00",
+        "text": "It works fine in some cases, however lately I’ve found it overly edits the photos wayyy to much to the point where it’s laughable and so clearly filtered from anyone’s point of view.  I wish there were a way to scale the edit down to your liking. Also, it pretty much ALWAYS screws up teeth.  They look horrible, especially when there are kids in a photo.  Will not be renewing this one."
+      },
+      {
+        "source": "app_store",
+        "rating": 1,
+        "date": "2026-06-07T07:16:50-07:00",
+        "text": "I really wish you could dial down some of the settings. They get really extreme and it’s either you don’t edit it all or you wind up with cartoonish images. Also, it’s glitching recently. You try to save it as a normal image and then all of a sudden it winds up super extreme when it’s saved."
+      },
+      {
+        "source": "app_store",
+        "rating": 3,
+        "date": "2026-05-30T13:52:59-07:00",
+        "text": "I wish it could fix cracks"
+      }
+    ],
+    "batch / bulk processing": [
+      {
+        "source": "app_store",
+        "rating": 1,
+        "date": "2026-05-24T00:37:53-07:00",
+        "text": "I paid for a week of Remini AI photos expecting stylized versions of MYSELF, not random AI women wearing toddler roller skates, sitting in strawberry fields, hiding in teddy bears, or looking like Celine Dion’s emotionally unavailable cousin.\n\nThe app constantly generated faces, bodies, hair, makeup, and expressions that barely resembled me at all. Every batch looked like the same generic AI influencer template with different costumes pasted on top.\n\nThe advertising makes it seem like you upload selfies and get polished cinematic portraits of yourself. What you actually get is uncanny valley stock-photo strangers wearing your skin as a suggestion.\n\nThe interface is also terrible. Projects get stuck, photos reload repeatedly, deleting images doesn’t actually clear the generation, and it’s extremely confusing trying to generate new looks versus reopening old ones.\n\nFor nine dollars, this was honestly ridiculous. If you want realistic enhancement of actual photos, this app is not it."
+      }
+    ],
+    "pricing / subscription": [
+      {
+        "source": "app_store",
+        "rating": 1,
+        "date": "2026-05-24T00:37:53-07:00",
+        "text": "I paid for a week of Remini AI photos expecting stylized versions of MYSELF, not random AI women wearing toddler roller skates, sitting in strawberry fields, hiding in teddy bears, or looking like Celine Dion’s emotionally unavailable cousin.\n\nThe app constantly generated faces, bodies, hair, makeup, and expressions that barely resembled me at all. Every batch looked like the same generic AI influencer template with different costumes pasted on top.\n\nThe advertising makes it seem like you upload selfies and get polished cinematic portraits of yourself. What you actually get is uncanny valley stock-photo strangers wearing your skin as a suggestion.\n\nThe interface is also terrible. Projects get stuck, photos reload repeatedly, deleting images doesn’t actually clear the generation, and it’s extremely confusing trying to generate new looks versus reopening old ones.\n\nFor nine dollars, this was honestly ridiculous. If you want realistic enhancement of actual photos, this app is not it."
+      }
+    ]
+  }
+}
