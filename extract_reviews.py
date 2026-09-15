@@ -120,6 +120,37 @@ def fetch_app_store_reviews(app_id, country="us", pages=10):
     return all_reviews
 
 
+def load_reviews_from_file(path):
+    """Load reviews pasted/exported manually, for when the store APIs aren't reachable.
+
+    Accepts a .json file (a list of strings, or a list of objects with a
+    "text" field and optional "rating"/"date"), or a .txt file with one
+    review per line.
+    """
+    with open(path, encoding="utf-8") as f:
+        if path.endswith(".json"):
+            data = json.load(f)
+            out = []
+            for item in data:
+                if isinstance(item, str):
+                    out.append({"source": "manual", "rating": None, "date": None, "text": item})
+                else:
+                    out.append(
+                        {
+                            "source": item.get("source", "manual"),
+                            "rating": item.get("rating"),
+                            "date": item.get("date"),
+                            "text": item.get("text", ""),
+                        }
+                    )
+            return out
+        return [
+            {"source": "manual", "rating": None, "date": None, "text": line.strip()}
+            for line in f
+            if line.strip()
+        ]
+
+
 def classify_feature_requests(all_reviews):
     buckets = defaultdict(list)
     for r in all_reviews:
@@ -147,11 +178,18 @@ def main():
     parser.add_argument("--lang", default="en", help="Play Store review language")
     parser.add_argument("--count", type=int, default=200, help="Number of Play Store reviews to fetch")
     parser.add_argument("--appstore-pages", type=int, default=10, help="App Store RSS pages (~50 reviews/page)")
-    parser.add_argument("--store", choices=["play", "appstore", "both"], default="both")
+    parser.add_argument("--store", choices=["play", "appstore", "both", "file"], default="both")
+    parser.add_argument("--input", help="Path to a .json or .txt file of reviews (required for --store file)")
     parser.add_argument("--out", default="reviews_output.json")
     args = parser.parse_args()
 
     all_reviews = []
+    if args.store == "file":
+        print(f"Loading reviews from {args.input}...")
+        file_reviews = load_reviews_from_file(args.input)
+        print(f"  got {len(file_reviews)} reviews")
+        all_reviews.extend(file_reviews)
+
     if args.store in ("play", "both"):
         print(f"Fetching Play Store reviews for {args.play_id}...")
         play_reviews = fetch_play_store_reviews(args.play_id, country=args.country, lang=args.lang, count=args.count)
