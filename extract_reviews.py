@@ -162,7 +162,7 @@ def classify_feature_requests(all_reviews):
             continue
         matched = False
         for feature, keywords in FEATURE_KEYWORDS.items():
-            if any(kw in lower for kw in keywords):
+            if any(re.search(rf"\b{re.escape(kw)}\b", lower) for kw in keywords):
                 buckets[feature].append(r)
                 matched = True
         if not matched:
