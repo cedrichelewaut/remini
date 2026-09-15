@@ -25,8 +25,11 @@ on:
         description: 'Comma-separated store country codes'
         default: 'us,gb,ca,au,in,id,br,mx,de,fr,it,es,jp,kr,nl,pl,tr,ph,vn,th'
       max_workers:
-        description: 'Parallel country fetches'
+        description: 'Parallel country fetches (App Store)'
         default: '8'
+      play_max_workers:
+        description: 'Parallel country fetches (Play Store - kept low, it throttles)'
+        default: '3'
 
 permissions:
   contents: write
@@ -51,6 +54,7 @@ jobs:
             --appstore-pages "${{ inputs.appstore_pages || '10' }}" \
             --countries "${{ inputs.countries || 'us,gb,ca,au,in,id,br,mx,de,fr,it,es,jp,kr,nl,pl,tr,ph,vn,th' }}" \
             --max-workers "${{ inputs.max_workers || '8' }}" \
+            --play-max-workers "${{ inputs.play_max_workers || '3' }}" \
             --out reviews_output.json \
             --debug
 

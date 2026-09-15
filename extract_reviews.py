@@ -12,6 +12,7 @@ Usage:
 import argparse
 import json
 import re
+import time
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -62,18 +63,24 @@ FEATURE_KEYWORDS = {
 }
 
 
-def fetch_play_store_reviews(app_id, country="us", lang="en", count=1000):
+def fetch_play_store_reviews(app_id, country="us", lang="en", count=1000, retries=2):
     all_reviews = []
     token = None
     while len(all_reviews) < count:
-        batch, token = reviews(
-            app_id,
-            lang=lang,
-            country=country,
-            sort=Sort.MOST_RELEVANT,
-            count=min(200, count - len(all_reviews)),
-            continuation_token=token,
-        )
+        batch = None
+        for attempt in range(retries + 1):
+            batch, token = reviews(
+                app_id,
+                lang=lang,
+                country=country,
+                sort=Sort.MOST_RELEVANT,
+                count=min(200, count - len(all_reviews)),
+                continuation_token=token,
+            )
+            if batch:
+                break
+            if attempt < retries:
+                time.sleep(2 * (attempt + 1))  # likely rate-limited, back off and retry
         if not batch:
             break
         all_reviews.extend(batch)
@@ -224,7 +231,13 @@ def main():
     parser.add_argument(
         "--appstore-pages", type=int, default=10, help="App Store RSS pages PER COUNTRY (~50 reviews/page, ~500 max)"
     )
-    parser.add_argument("--max-workers", type=int, default=8, help="Parallel country fetches")
+    parser.add_argument("--max-workers", type=int, default=8, help="Parallel country fetches for App Store")
+    parser.add_argument(
+        "--play-max-workers",
+        type=int,
+        default=3,
+        help="Parallel country fetches for Play Store (kept low; Play throttles concurrent scraping)",
+    )
     parser.add_argument("--store", choices=["play", "appstore", "both", "file"], default="both")
     parser.add_argument("--input", help="Path to a .json or .txt file of reviews (required for --store file)")
     parser.add_argument("--out", default="reviews_output.json")
@@ -245,7 +258,7 @@ def main():
         play_reviews = fetch_multi_country(
             lambda country: fetch_play_store_reviews(args.play_id, country=country, lang=args.lang, count=args.count),
             countries,
-            args.max_workers,
+            args.play_max_workers,
             "play",
         )
         print(f"  Play Store total: {len(play_reviews)} reviews")
