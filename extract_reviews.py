@@ -26,40 +26,105 @@ DEFAULT_COUNTRIES = [
     "it", "es", "jp", "kr", "nl", "pl", "tr", "ph", "vn", "th",
 ]
 
-# Phrases that signal a reviewer is asking for something, not just reporting a bug.
+# Phrases that signal a reviewer is asking for or demanding something, not just
+# venting. Broader than plain "I wish" phrasing - "please fix X", "needs to
+# support Y", "should let me Z" are asks too.
 FEATURE_REQUEST_SIGNALS = [
     r"\bi wish\b",
     r"\bwish (it|there|you|they)\b",
-    r"please add",
-    r"please implement",
-    r"please support",
-    r"could you add",
-    r"can you add",
-    r"would be (nice|great|awesome|good|cool)",
-    r"it would be (nice|great|good) if",
-    r"should (have|add|include)",
-    r"need(s)? (a|an|to have)",
-    r"hope (you|they) add",
+    r"please (add|implement|support|fix|improve|bring back|allow|let|make|review|consider)",
+    r"could you (add|implement|please)",
+    r"can (you|we) (add|get|have)",
+    r"would be (nice|great|awesome|good|cool|amazing)",
+    r"would love (to see|it if)",
+    r"it would be (nice|great|good|amazing) if",
+    r"should (have|add|include|be able|let|allow|offer)",
+    r"need(s)? (a|an|to have|to be able|to support|to add|to improve|improvement)",
+    r"hope (you|they) (add|fix|improve|bring|consider)",
+    r"hoping (for|they|you)",
     r"feature request",
     r"missing (a|an|the)",
     r"add (a|an|the)? ?option",
     r"add support for",
-    r"why (isn'?t|is there no)",
+    r"why (isn'?t|is there no|can'?t|doesn'?t)",
     r"\bsuggestion\b",
+    r"give (us|me) (the|an) option",
+    r"(the )?ability to \w+",
+    r"an option to\b",
+    r"let (us|me) \w+",
+    r"allow (us|me) to",
+    r"want(ed)? the ability",
+    r"if only (it|you|there)",
 ]
 
 # Keyword buckets used to group flagged reviews by the feature they're asking about.
+# Built from an initial keyword pass + a manual read of everything that didn't
+# match anything, to catch real phrasing ("group shot", "render queue", "bring
+# back the old algorithm"...) that a narrower keyword list would miss.
 FEATURE_KEYWORDS = {
+    "pricing / subscription": [
+        "subscription", "\\bprice\\b", "pricing", "expensive", "free trial", "paywall",
+        "\\bcost\\b", "one.time (purchase|price|fee)", "lifetime (purchase|plan|price)",
+        "refund", "cancel my (account|subscription)", "charg(e|ed|ing) my card", "afford",
+    ],
+    "usage limits / free tier": [
+        "photos per day", "free photos", "\\bfree version\\b", "\\bquota\\b",
+        "\\b5x\\b", "\\b10x\\b", "limit(ing)? the (number|amount)", "free daily",
+    ],
+    "ads": ["\\bads\\b", "\\bad\\b", "advertisement", "advert"],
+    "batch / bulk / queue processing": [
+        "batch", "bulk", "multiple photos at once", "multiple images", "render queue",
+        "process (several|multiple)", "one at a time", "all at once", "\\bqueue\\b",
+    ],
+    "improving AI model / output quality": [
+        "ai model", "the algorithm", "\\baccuracy\\b", "unrealistic", "distort", "blurry face",
+        "plastic look", "over.smooth", "\\bartifact\\b", "doesn'?t look like me",
+        "fake looking", "uncanny", "hallucinat", "quality of the (result|output|edit)",
+        "too smooth", "cartoonish", "overly edit", "bring back the old (algorithm|version)",
+        "old version was (better|amazing)", "too aggressive", "extra (arm|leg|limb|finger)",
+        "more variation", "unnatural", "\\bvariety\\b", "skin (color|colour|tone)", "melanin",
+        "facial (details|features)", "\\bmoles\\b", "\\bfreckles\\b", "facial scars",
+    ],
+    "manual editing controls / intensity slider": [
+        "manual editing", "customize the functionality", "degree of enhanc",
+        "level of (the )?enhanc", "adjust the (strength|intensity)", "control the (strength|intensity)",
+        "increase or decrease the",
+    ],
+    "background / full-photo enhancement": [
+        "enhance (more than|the rest of|the whole)", "blur.*background", "blur the bg",
+        "background enhancer",
+    ],
+    "multiple face / group photo support": [
+        "group (photo|pic|picture|shot)", "multiple faces", "several faces",
+        "many faces", "two people", "several people", "everyone in the photo",
+        "other people in the (photo|picture)", "blur(ring)? other people", "extra (person|people)",
+        "random (ai )?(people|women|men|faces)", "more than one person", "couple photo",
+        "edit both of us",
+    ],
+    "multi-user / family accounts": [
+        "multiple accounts", "family plan", "share (my |the )?subscription", "multiple users",
+        "separate profiles", "family sharing", "add another user", "second account",
+        "kids account", "shared account", "multi.?user",
+    ],
+    "delete my data / uploaded photos": [
+        "delete (option|key|my data|the pictures|my photos|my pictures)", "delete.*data",
+    ],
+    "cancel in-progress processing": ["cancel the generat", "stop the (process|generat)"],
+    "new filters / styles": ["add .* filter", "\\bfilter\\b.*please", "taller", "fighting ai"],
     "dark mode": ["dark mode", "night mode"],
-    "undo / redo": ["undo", "redo"],
-    "batch / bulk processing": ["batch", "bulk", "multiple photos at once", "multiple images"],
+    "undo / redo": [r"\bundo\b", r"\bredo\b"],
     "video enhancement": ["video enhance", "enhance video", "video quality", "video support"],
     "export / original quality": ["export", "original resolution", "full resolution", "watermark"],
-    "pricing / subscription": ["subscription", "price", "expensive", "free trial", "paywall", "cost"],
     "offline mode": ["offline"],
-    "face / detail accuracy": ["distort", "blurry face", "plastic look", "over-smooth", "artifact"],
-    "speed / performance": ["slow", "faster"],
-    "language support": ["language", "translate"],
+    "speed / performance": ["\\bslow\\b", "\\bfaster\\b"],
+    "language support": ["\\blanguage\\b", "\\btranslate\\b"],
+    # Not feature requests, but the broadened "please fix" signal catches these -
+    # bucketed separately so they don't masquerade as feature asks in "other".
+    "bugs / stability (not a feature request)": [
+        "network connection", "no internet", "something went wrong", "won'?t open",
+        "wont open", "keeps? crashing", "\\bglitch", "doesn'?t work anymore",
+        "stopped working", "error message", "reinstall(ed|ing)?",
+    ],
 }
 
 
@@ -217,7 +282,9 @@ def classify_feature_requests(all_reviews):
             continue
         matched = False
         for feature, keywords in FEATURE_KEYWORDS.items():
-            if any(re.search(rf"\b{re.escape(kw)}\b", lower) for kw in keywords):
+            # Keyword entries are regex fragments (not escaped) so patterns can use
+            # groups/alternation/\b themselves - see the false-positive fix history.
+            if any(re.search(kw, lower) for kw in keywords):
                 buckets[feature].append(r)
                 matched = True
         if not matched:
@@ -254,9 +321,46 @@ def main():
     )
     parser.add_argument("--store", choices=["play", "appstore", "both", "file"], default="both")
     parser.add_argument("--input", help="Path to a .json or .txt file of reviews (required for --store file)")
+    parser.add_argument(
+        "--reclassify",
+        help="Path to a previous reviews_output.json - reclassify its all_reviews without re-fetching",
+    )
     parser.add_argument("--out", default="reviews_output.json")
     parser.add_argument("--debug", action="store_true", help="Print per-source text stats and samples")
     args = parser.parse_args()
+
+    if args.reclassify:
+        print(f"Reclassifying reviews from {args.reclassify} (no network calls)...")
+        with open(args.reclassify, encoding="utf-8") as f:
+            prior = json.load(f)
+        all_reviews = prior["all_reviews"]
+        print(f"  loaded {len(all_reviews)} reviews")
+        feature_buckets = classify_feature_requests(all_reviews)
+        print("\nFeature request summary:")
+        for feature, items in sorted(feature_buckets.items(), key=lambda kv: -len(kv[1])):
+            print(f"  {feature}: {len(items)} mentions")
+        output = {
+            "app": prior.get("app"),
+            "total_reviews_fetched": len(all_reviews),
+            "all_reviews": all_reviews,
+            "feature_requests": {
+                feature: [
+                    {
+                        "source": r["source"],
+                        "country": r.get("country"),
+                        "rating": r["rating"],
+                        "date": r["date"],
+                        "text": r["text"],
+                    }
+                    for r in items
+                ]
+                for feature, items in feature_buckets.items()
+            },
+        }
+        with open(args.out, "w", encoding="utf-8") as f:
+            json.dump(output, f, indent=2, ensure_ascii=False)
+        print(f"\nSaved reclassified results to {args.out}")
+        return
 
     countries = [c.strip() for c in args.countries.split(",") if c.strip()]
 
