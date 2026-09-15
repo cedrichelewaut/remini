@@ -63,7 +63,7 @@ FEATURE_KEYWORDS = {
 }
 
 
-def fetch_play_store_reviews(app_id, country="us", lang="en", count=1000, retries=2):
+def fetch_play_store_reviews(app_id, country="us", lang="en", count=1000, retries=4):
     all_reviews = []
     token = None
     while len(all_reviews) < count:
@@ -80,7 +80,7 @@ def fetch_play_store_reviews(app_id, country="us", lang="en", count=1000, retrie
             if batch:
                 break
             if attempt < retries:
-                time.sleep(2 * (attempt + 1))  # likely rate-limited, back off and retry
+                time.sleep(4 * (attempt + 1))  # likely rate-limited, back off and retry
         if not batch:
             break
         all_reviews.extend(batch)
@@ -141,12 +141,20 @@ def fetch_app_store_reviews(app_id, country="us", pages=10):
     return all_reviews
 
 
-def fetch_multi_country(fetch_one, countries, max_workers, label):
-    """Run fetch_one(country) across countries in parallel, deduping by review id."""
+def fetch_multi_country(fetch_one, countries, max_workers, label, stagger_seconds=0):
+    """Run fetch_one(country) across countries in parallel, deduping by review id.
+
+    stagger_seconds inserts a delay between submitting successive tasks, to
+    avoid firing a burst of requests that looks like abuse to the target API.
+    """
     all_reviews = []
     seen_ids = set()
     with ThreadPoolExecutor(max_workers=max_workers) as pool:
-        futures = {pool.submit(fetch_one, country): country for country in countries}
+        futures = {}
+        for i, country in enumerate(countries):
+            if stagger_seconds and i > 0:
+                time.sleep(stagger_seconds)
+            futures[pool.submit(fetch_one, country)] = country
         for future in as_completed(futures):
             country = futures[future]
             try:
@@ -235,8 +243,14 @@ def main():
     parser.add_argument(
         "--play-max-workers",
         type=int,
-        default=3,
+        default=1,
         help="Parallel country fetches for Play Store (kept low; Play throttles concurrent scraping)",
+    )
+    parser.add_argument(
+        "--play-stagger",
+        type=float,
+        default=3.0,
+        help="Seconds to wait between starting each Play Store country fetch",
     )
     parser.add_argument("--store", choices=["play", "appstore", "both", "file"], default="both")
     parser.add_argument("--input", help="Path to a .json or .txt file of reviews (required for --store file)")
@@ -260,6 +274,7 @@ def main():
             countries,
             args.play_max_workers,
             "play",
+            stagger_seconds=args.play_stagger,
         )
         print(f"  Play Store total: {len(play_reviews)} reviews")
         all_reviews.extend(play_reviews)
