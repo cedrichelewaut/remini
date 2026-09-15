@@ -94,11 +94,23 @@ FEATURE_KEYWORDS = {
         "enhance (more than|the rest of|the whole)", "blur.*background", "blur the bg",
         "background enhancer",
     ],
-    "multiple face / group photo support": [
+    # The stylized "AI Photo" generation feature applied to 2+ people - a couple,
+    # friends, family - as opposed to enhancing an existing photo (see below).
+    # This is the priority segment: evidence of an existing/removed "couples"
+    # feature people are actively looking for.
+    "AI photo generation: couples / multi-person": [
+        "couples?( ai)? (photo )?generat", "couples? edition", "photos? of couples?",
+        "couple photos? (from|with|of) individual photos", "ai photos? (from|of|with) (couples?|friends|family)",
+        "generat(e|ing) (a |an )?(couple|group|family) (ai )?photo",
+        "create (more )?couple photos",
+    ],
+    # Quality gap in the Enhance/upscale feature specifically when 2+ people
+    # are in the source photo, as opposed to generation or single-subject work.
+    "multi-person photo enhancement quality": [
         "group (photo|pic|picture|shot)", "multiple faces", "several faces",
         "many faces", "two people", "several people", "everyone in the photo",
         "other people in the (photo|picture)", "blur(ring)? other people", "extra (person|people)",
-        "random (ai )?(people|women|men|faces)", "more than one person", "couple photo",
+        "random (ai )?(people|women|men|faces)", "more than one person",
         "edit both of us",
     ],
     "multi-user / family accounts": [

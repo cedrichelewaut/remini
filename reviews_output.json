@@ -81597,7 +81597,7 @@
         "text": "I downloaded the app and tried some pictures. But then realised that the app doesn’t give you an option to delete your data including the pictures you uploaded. Their website says email us to delete. This is against Apple’s guidelines. Also, too many full screen advertisements almost every shot. NOT RECOMMENDED!"
       }
     ],
-    "multiple face / group photo support": [
+    "multi-person photo enhancement quality": [
       {
         "source": "app_store",
         "country": "au",
@@ -81618,13 +81618,6 @@
         "rating": 1,
         "date": "2025-02-18T11:15:33-07:00",
         "text": "I’ve had the paid pro version I tried to add my sister to edit some of both of us and it refuses to let me have more than one person to edit when it says you can have up to 4 I’ve tried for days to work it out. Unsubscribed now!"
-      },
-      {
-        "source": "app_store",
-        "country": "gb",
-        "rating": 4,
-        "date": "2025-02-06T15:30:53-07:00",
-        "text": "Navigation and options could be easier and ability to create more couple photos with individual photos of each person"
       }
     ],
     "video enhancement": [
@@ -81641,6 +81634,15 @@
         "rating": 3,
         "date": "2023-05-07T13:26:28-07:00",
         "text": "The subscriptions used to be a lot cheaper. Some non-needed effects are added whenever I enhance a photo and would appreciate it if they weren’t automatically turned on. The app used to have a video enhancer and an option to see previously enhanced pictures (“history”) but not anymore. Also, PLEASE make it possible for the app to recognize braces instead of giving them an odd effect. The app is slowly getting worse which is ironic since it’s an ‘enhances’\n\nFor the rest, it’s a great app and can make low quality/blurry pictures a lot better! Glad we’re still able to use regular features for free (by watching a 5-30 second ad) instead of nothing :)"
+      }
+    ],
+    "AI photo generation: couples / multi-person": [
+      {
+        "source": "app_store",
+        "country": "gb",
+        "rating": 4,
+        "date": "2025-02-06T15:30:53-07:00",
+        "text": "Navigation and options could be easier and ability to create more couple photos with individual photos of each person"
       }
     ]
   }
