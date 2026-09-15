@@ -1,17 +1,29 @@
 #!/usr/bin/env python3
 """Fetch Google Play / App Store reviews for an app and bucket feature requests.
 
+Fetches from multiple store countries in parallel, since each country has
+its own (capped) pool of reviews - that's how you get thousands instead of
+a few hundred.
+
 Usage:
     python extract_reviews.py --store play
-    python extract_reviews.py --store both --count 500
+    python extract_reviews.py --store both --countries us,gb,in,id,br
 """
 import argparse
 import json
 import re
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 from google_play_scraper import Sort, reviews
+
+# Countries with large Remini user bases, to maximize distinct reviews pulled
+# (App Store's RSS feed and Play Store's review pool are both per-country).
+DEFAULT_COUNTRIES = [
+    "us", "gb", "ca", "au", "in", "id", "br", "mx", "de", "fr",
+    "it", "es", "jp", "kr", "nl", "pl", "tr", "ph", "vn", "th",
+]
 
 # Phrases that signal a reviewer is asking for something, not just reporting a bug.
 FEATURE_REQUEST_SIGNALS = [
@@ -50,7 +62,7 @@ FEATURE_KEYWORDS = {
 }
 
 
-def fetch_play_store_reviews(app_id, country="us", lang="en", count=200):
+def fetch_play_store_reviews(app_id, country="us", lang="en", count=1000):
     all_reviews = []
     token = None
     while len(all_reviews) < count:
@@ -71,6 +83,7 @@ def fetch_play_store_reviews(app_id, country="us", lang="en", count=200):
         {
             "source": "play_store",
             "id": r.get("reviewId"),
+            "country": country,
             "author": r.get("userName"),
             "rating": r.get("score"),
             "date": str(r.get("at")),
@@ -108,6 +121,7 @@ def fetch_app_store_reviews(app_id, country="us", pages=10):
                 {
                     "source": "app_store",
                     "id": rid,
+                    "country": country,
                     "author": e.get("author", {}).get("name", {}).get("label"),
                     "rating": int(e.get("im:rating", {}).get("label", 0)),
                     "date": e.get("updated", {}).get("label"),
@@ -117,6 +131,32 @@ def fetch_app_store_reviews(app_id, country="us", pages=10):
             got_review = True
         if not got_review:
             break
+    return all_reviews
+
+
+def fetch_multi_country(fetch_one, countries, max_workers, label):
+    """Run fetch_one(country) across countries in parallel, deduping by review id."""
+    all_reviews = []
+    seen_ids = set()
+    with ThreadPoolExecutor(max_workers=max_workers) as pool:
+        futures = {pool.submit(fetch_one, country): country for country in countries}
+        for future in as_completed(futures):
+            country = futures[future]
+            try:
+                batch = future.result()
+            except Exception as exc:
+                print(f"  [{label}/{country}] failed: {exc}")
+                continue
+            new = 0
+            for r in batch:
+                rid = r.get("id")
+                if rid and rid in seen_ids:
+                    continue
+                if rid:
+                    seen_ids.add(rid)
+                all_reviews.append(r)
+                new += 1
+            print(f"  [{label}/{country}] +{new} new reviews (running total {len(all_reviews)})")
     return all_reviews
 
 
@@ -174,15 +214,24 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--play-id", default="com.bigwinepot.nwdn.international", help="Play Store package id")
     parser.add_argument("--appstore-id", default="1470373330", help="App Store numeric app id")
-    parser.add_argument("--country", default="us")
+    parser.add_argument(
+        "--countries",
+        default=",".join(DEFAULT_COUNTRIES),
+        help="Comma-separated store country codes to pull from (each country has its own review pool)",
+    )
     parser.add_argument("--lang", default="en", help="Play Store review language")
-    parser.add_argument("--count", type=int, default=200, help="Number of Play Store reviews to fetch")
-    parser.add_argument("--appstore-pages", type=int, default=10, help="App Store RSS pages (~50 reviews/page)")
+    parser.add_argument("--count", type=int, default=1000, help="Play Store reviews to fetch PER COUNTRY")
+    parser.add_argument(
+        "--appstore-pages", type=int, default=10, help="App Store RSS pages PER COUNTRY (~50 reviews/page, ~500 max)"
+    )
+    parser.add_argument("--max-workers", type=int, default=8, help="Parallel country fetches")
     parser.add_argument("--store", choices=["play", "appstore", "both", "file"], default="both")
     parser.add_argument("--input", help="Path to a .json or .txt file of reviews (required for --store file)")
     parser.add_argument("--out", default="reviews_output.json")
     parser.add_argument("--debug", action="store_true", help="Print per-source text stats and samples")
     args = parser.parse_args()
+
+    countries = [c.strip() for c in args.countries.split(",") if c.strip()]
 
     all_reviews = []
     if args.store == "file":
@@ -192,15 +241,25 @@ def main():
         all_reviews.extend(file_reviews)
 
     if args.store in ("play", "both"):
-        print(f"Fetching Play Store reviews for {args.play_id}...")
-        play_reviews = fetch_play_store_reviews(args.play_id, country=args.country, lang=args.lang, count=args.count)
-        print(f"  got {len(play_reviews)} reviews")
+        print(f"Fetching Play Store reviews for {args.play_id} across {len(countries)} countries...")
+        play_reviews = fetch_multi_country(
+            lambda country: fetch_play_store_reviews(args.play_id, country=country, lang=args.lang, count=args.count),
+            countries,
+            args.max_workers,
+            "play",
+        )
+        print(f"  Play Store total: {len(play_reviews)} reviews")
         all_reviews.extend(play_reviews)
 
     if args.store in ("appstore", "both"):
-        print(f"Fetching App Store reviews for {args.appstore_id}...")
-        appstore_reviews = fetch_app_store_reviews(args.appstore_id, country=args.country, pages=args.appstore_pages)
-        print(f"  got {len(appstore_reviews)} reviews")
+        print(f"Fetching App Store reviews for {args.appstore_id} across {len(countries)} countries...")
+        appstore_reviews = fetch_multi_country(
+            lambda country: fetch_app_store_reviews(args.appstore_id, country=country, pages=args.appstore_pages),
+            countries,
+            args.max_workers,
+            "appstore",
+        )
+        print(f"  App Store total: {len(appstore_reviews)} reviews")
         all_reviews.extend(appstore_reviews)
 
     if args.debug:
@@ -215,16 +274,18 @@ def main():
 
     feature_buckets = classify_feature_requests(all_reviews)
 
-    print("\nFeature request summary:")
+    print(f"\nTotal reviews fetched: {len(all_reviews)}")
+    print("Feature request summary:")
     for feature, items in sorted(feature_buckets.items(), key=lambda kv: -len(kv[1])):
         print(f"  {feature}: {len(items)} mentions")
 
     output = {
-        "app": {"play_id": args.play_id, "appstore_id": args.appstore_id},
+        "app": {"play_id": args.play_id, "appstore_id": args.appstore_id, "countries": countries},
         "total_reviews_fetched": len(all_reviews),
+        "all_reviews": all_reviews,
         "feature_requests": {
             feature: [
-                {"source": r["source"], "rating": r["rating"], "date": r["date"], "text": r["text"]}
+                {"source": r["source"], "country": r.get("country"), "rating": r["rating"], "date": r["date"], "text": r["text"]}
                 for r in items
             ]
             for feature, items in feature_buckets.items()

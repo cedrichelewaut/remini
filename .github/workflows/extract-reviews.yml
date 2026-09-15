@@ -16,14 +16,17 @@ on:
         type: choice
         options: [play, appstore, both]
       count:
-        description: 'Number of Play Store reviews to fetch'
+        description: 'Play Store reviews to fetch PER COUNTRY'
         default: '1000'
       appstore_pages:
-        description: 'Number of App Store RSS pages (~50 reviews/page)'
-        default: '20'
-      country:
-        description: 'Store country code'
-        default: 'us'
+        description: 'App Store RSS pages PER COUNTRY (~50 reviews/page, ~500 max)'
+        default: '10'
+      countries:
+        description: 'Comma-separated store country codes'
+        default: 'us,gb,ca,au,in,id,br,mx,de,fr,it,es,jp,kr,nl,pl,tr,ph,vn,th'
+      max_workers:
+        description: 'Parallel country fetches'
+        default: '8'
 
 permissions:
   contents: write
@@ -45,8 +48,9 @@ jobs:
           python extract_reviews.py \
             --store "${{ inputs.store || 'both' }}" \
             --count "${{ inputs.count || '1000' }}" \
-            --appstore-pages "${{ inputs.appstore_pages || '20' }}" \
-            --country "${{ inputs.country || 'us' }}" \
+            --appstore-pages "${{ inputs.appstore_pages || '10' }}" \
+            --countries "${{ inputs.countries || 'us,gb,ca,au,in,id,br,mx,de,fr,it,es,jp,kr,nl,pl,tr,ph,vn,th' }}" \
+            --max-workers "${{ inputs.max_workers || '8' }}" \
             --out reviews_output.json \
             --debug
 
