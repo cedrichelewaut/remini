@@ -68,6 +68,12 @@
       },
       {
         "source": "play_store",
+        "rating": 1,
+        "date": "2021-03-19 02:33:10",
+        "text": "I downloaded it first and it was a really good app that does its job. It should have been a 5 star, but after a while I uninstalled it to free some memory and now it won't redownload again even though I have enough space on my phone and a stable internet connection. I also tried downloading it on another phone and it' still the same problem. Please fix this ASAP, thank you"
+      },
+      {
+        "source": "play_store",
         "rating": 3,
         "date": "2024-03-29 07:23:27",
         "text": "Good, but needs improvement. One thing that I'd like to see worked on is the way face enhancement deals with facial details. For example, moles, spots, facial scars, freckles etc. It would be nice if the feature didn't make those details disappear. Like, some people actually like those things on their face, yet they always disappear when I use the app."
@@ -155,6 +161,12 @@
         "rating": 1,
         "date": "2024-08-02 23:20:31",
         "text": "Editing my review: this app used to be the best out there, five stars!! Now I wish I could give it a zero. The new update is terrible, almost feels like one of those scammy apps. Will not upload my photos at all. Also, when I get it to edit my pictures to make them clearer, i look like a monster.This app used to be amazing. It sucks now. I do have a tip tho, if you want to use the app with less ads,swipe out of the app and then open it again on ur home screen. It will skip the ads."
+      },
+      {
+        "source": "play_store",
+        "rating": 1,
+        "date": "2025-11-27 04:51:41",
+        "text": "Had an old version for a long time, and I used it often. I recently got a new phone, which forced me to install the newest updated version, and it just gave me more of a reason why I dont update apps. The app went downhill, the selection of enchantments went down, the ui looks worse, and I wish I never had to reinstall the app. Edit: It's gotten even worse. A sea of pop up ads, more features locked behind paywalls. Im done with this app, its beyond usable now. Shove off. EDIT: ITS EVEN WORSE"
       },
       {
         "source": "app_store",
@@ -247,26 +259,6 @@
         "rating": 5,
         "date": "2021-10-15 20:11:22",
         "text": "Awesome way to clear up old photos or blurry photos of faces. I was impressed. However my needs are more along the lines of blurry nature photos of animals. My spouse has lits of old family pictures that it has been great for. It would be worth it for the yearly price if you wanted great facial images of your old photos. The ads on the free version are long and cringy lol. Overall I was impressed. Would pay yearly if I personally needed it."
-      },
-      {
-        "source": "play_store",
-        "rating": 1,
-        "date": "2025-11-27 04:51:41",
-        "text": "Had an old version for a long time, and I used it often. I recently got a new phone, which forced me to install the newest updated version, and it just gave me more of a reason why I dont update apps. The app went downhill, the selection of enchantments went down, the ui looks worse, and I wish I never had to reinstall the app. Edit: It's gotten even worse. A sea of pop up ads, more features locked behind paywalls. Im done with this app, its beyond usable now. Shove off. EDIT: ITS EVEN WORSE"
-      },
-      {
-        "source": "app_store",
-        "rating": 1,
-        "date": "2026-05-24T00:37:53-07:00",
-        "text": "I paid for a week of Remini AI photos expecting stylized versions of MYSELF, not random AI women wearing toddler roller skates, sitting in strawberry fields, hiding in teddy bears, or looking like Celine Dion’s emotionally unavailable cousin.\n\nThe app constantly generated faces, bodies, hair, makeup, and expressions that barely resembled me at all. Every batch looked like the same generic AI influencer template with different costumes pasted on top.\n\nThe advertising makes it seem like you upload selfies and get polished cinematic portraits of yourself. What you actually get is uncanny valley stock-photo strangers wearing your skin as a suggestion.\n\nThe interface is also terrible. Projects get stuck, photos reload repeatedly, deleting images doesn’t actually clear the generation, and it’s extremely confusing trying to generate new looks versus reopening old ones.\n\nFor nine dollars, this was honestly ridiculous. If you want realistic enhancement of actual photos, this app is not it."
-      }
-    ],
-    "undo / redo": [
-      {
-        "source": "play_store",
-        "rating": 1,
-        "date": "2021-03-19 02:33:10",
-        "text": "I downloaded it first and it was a really good app that does its job. It should have been a 5 star, but after a while I uninstalled it to free some memory and now it won't redownload again even though I have enough space on my phone and a stable internet connection. I also tried downloading it on another phone and it' still the same problem. Please fix this ASAP, thank you"
       }
     ],
     "batch / bulk processing": [
