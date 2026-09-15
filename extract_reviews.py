@@ -181,6 +181,7 @@ def main():
     parser.add_argument("--store", choices=["play", "appstore", "both", "file"], default="both")
     parser.add_argument("--input", help="Path to a .json or .txt file of reviews (required for --store file)")
     parser.add_argument("--out", default="reviews_output.json")
+    parser.add_argument("--debug", action="store_true", help="Print per-source text stats and samples")
     args = parser.parse_args()
 
     all_reviews = []
@@ -201,6 +202,16 @@ def main():
         appstore_reviews = fetch_app_store_reviews(args.appstore_id, country=args.country, pages=args.appstore_pages)
         print(f"  got {len(appstore_reviews)} reviews")
         all_reviews.extend(appstore_reviews)
+
+    if args.debug:
+        by_source = defaultdict(list)
+        for r in all_reviews:
+            by_source[r["source"]].append(r)
+        for source, items in by_source.items():
+            non_empty = [r for r in items if (r.get("text") or "").strip()]
+            print(f"\n[debug] {source}: {len(items)} total, {len(non_empty)} with non-empty text")
+            for r in non_empty[:5]:
+                print(f"    sample: {r['text'][:150]!r}")
 
     feature_buckets = classify_feature_requests(all_reviews)
 

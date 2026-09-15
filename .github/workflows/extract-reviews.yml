@@ -47,7 +47,8 @@ jobs:
             --count "${{ inputs.count || '1000' }}" \
             --appstore-pages "${{ inputs.appstore_pages || '20' }}" \
             --country "${{ inputs.country || 'us' }}" \
-            --out reviews_output.json
+            --out reviews_output.json \
+            --debug
 
       - name: Commit results
         run: |
