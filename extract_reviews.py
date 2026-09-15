@@ -58,7 +58,7 @@ def fetch_play_store_reviews(app_id, country="us", lang="en", count=200):
             app_id,
             lang=lang,
             country=country,
-            sort=Sort.NEWEST,
+            sort=Sort.MOST_RELEVANT,
             count=min(200, count - len(all_reviews)),
             continuation_token=token,
         )
