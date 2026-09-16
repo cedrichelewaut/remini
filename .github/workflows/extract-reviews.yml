@@ -55,12 +55,12 @@ jobs:
       - name: Run extraction
         run: |
           python extract_reviews.py \
-            --store "${{ inputs.store || 'both' }}" \
+            --store "${{ inputs.store || 'appstore' }}" \
             --count "${{ inputs.count || '1000' }}" \
             --appstore-pages "${{ inputs.appstore_pages || '10' }}" \
-            --countries "${{ inputs.countries || 'us,gb,ca,au,in,id,br,mx,de,fr,it,es,jp,kr,nl,pl,tr,ph,vn,th,ar,co,cl,pe,ec,uy,ve,do,ie,nz,za,sg' }}" \
-            --max-workers "${{ inputs.max_workers || '8' }}" \
-            --appstore-stagger "${{ inputs.appstore_stagger || '0' }}" \
+            --countries "${{ inputs.countries || 'ar,co,cl,pe,ec,uy,ve,do,ie,nz,za,sg' }}" \
+            --max-workers "${{ inputs.max_workers || '3' }}" \
+            --appstore-stagger "${{ inputs.appstore_stagger || '3' }}" \
             --play-max-workers "${{ inputs.play_max_workers || '1' }}" \
             --play-stagger "${{ inputs.play_stagger || '3' }}" \
             --out reviews_output.json \
