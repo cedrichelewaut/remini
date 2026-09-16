@@ -182,7 +182,7 @@ def fetch_play_store_reviews(app_id, country="us", lang="en", count=1000, retrie
     ]
 
 
-def fetch_app_store_reviews(app_id, country="us", pages=10):
+def fetch_app_store_reviews(app_id, country="us", pages=10, retries=4):
     all_reviews = []
     seen_ids = set()
     for page in range(1, pages + 1):
@@ -190,8 +190,14 @@ def fetch_app_store_reviews(app_id, country="us", pages=10):
             f"https://itunes.apple.com/{country}/rss/customerreviews/"
             f"page={page}/id={app_id}/sortby=mostrecent/json"
         )
-        resp = requests.get(url, timeout=15)
-        if resp.status_code != 200:
+        resp = None
+        for attempt in range(retries + 1):
+            resp = requests.get(url, timeout=15)
+            if resp.status_code == 200:
+                break
+            if attempt < retries:
+                time.sleep(3 * (attempt + 1))  # likely rate-limited, back off and retry
+        if resp is None or resp.status_code != 200:
             break
         entries = resp.json().get("feed", {}).get("entry", [])
         if isinstance(entries, dict):
@@ -325,6 +331,13 @@ def main():
     )
     parser.add_argument("--max-workers", type=int, default=8, help="Parallel country fetches for App Store")
     parser.add_argument(
+        "--appstore-stagger",
+        type=float,
+        default=0.0,
+        help="Seconds to wait between starting each App Store country fetch (raise this if many "
+        "countries at once triggers rate-limiting - e.g. only a handful of pages come back)",
+    )
+    parser.add_argument(
         "--play-max-workers",
         type=int,
         default=1,
@@ -414,6 +427,7 @@ def main():
             countries,
             args.max_workers,
             "appstore",
+            stagger_seconds=args.appstore_stagger,
         )
         print(f"  App Store total: {len(appstore_reviews)} reviews")
         all_reviews.extend(appstore_reviews)

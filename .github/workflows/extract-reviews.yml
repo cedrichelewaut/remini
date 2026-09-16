@@ -27,6 +27,9 @@ on:
       max_workers:
         description: 'Parallel country fetches (App Store)'
         default: '8'
+      appstore_stagger:
+        description: 'Seconds between starting each App Store country fetch (raise if rate-limited)'
+        default: '0'
       play_max_workers:
         description: 'Parallel country fetches (Play Store - kept low, it throttles)'
         default: '1'
@@ -57,6 +60,7 @@ jobs:
             --appstore-pages "${{ inputs.appstore_pages || '10' }}" \
             --countries "${{ inputs.countries || 'us,gb,ca,au,in,id,br,mx,de,fr,it,es,jp,kr,nl,pl,tr,ph,vn,th,ar,co,cl,pe,ec,uy,ve,do,ie,nz,za,sg' }}" \
             --max-workers "${{ inputs.max_workers || '8' }}" \
+            --appstore-stagger "${{ inputs.appstore_stagger || '0' }}" \
             --play-max-workers "${{ inputs.play_max_workers || '1' }}" \
             --play-stagger "${{ inputs.play_stagger || '3' }}" \
             --out reviews_output.json \
