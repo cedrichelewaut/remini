@@ -11,6 +11,7 @@ Usage:
 """
 import argparse
 import json
+import os
 import re
 import time
 from collections import defaultdict
@@ -24,6 +25,10 @@ from google_play_scraper import Sort, reviews
 DEFAULT_COUNTRIES = [
     "us", "gb", "ca", "au", "in", "id", "br", "mx", "de", "fr",
     "it", "es", "jp", "kr", "nl", "pl", "tr", "ph", "vn", "th",
+    # Added to prioritize Spanish and English coverage (easy to classify with
+    # existing EN/ES patterns) across more App Store storefronts.
+    "ar", "co", "cl", "pe", "ec", "uy", "ve", "do",  # Spanish-speaking Latin America
+    "ie", "nz", "za", "sg",  # additional English-speaking markets
 ]
 
 # Phrases that signal a reviewer is asking for or demanding something, not just
@@ -338,6 +343,13 @@ def main():
         help="Path to a previous reviews_output.json - reclassify its all_reviews without re-fetching",
     )
     parser.add_argument("--out", default="reviews_output.json")
+    parser.add_argument(
+        "--merge-with-existing",
+        action="store_true",
+        help="If --out already exists, merge freshly fetched reviews into it (dedupe by id/text) "
+        "instead of overwriting. Use this for incremental runs (e.g. adding new countries) so a "
+        "narrower fetch never clobbers a larger previously-saved dataset.",
+    )
     parser.add_argument("--debug", action="store_true", help="Print per-source text stats and samples")
     args = parser.parse_args()
 
@@ -406,6 +418,25 @@ def main():
         print(f"  App Store total: {len(appstore_reviews)} reviews")
         all_reviews.extend(appstore_reviews)
 
+    prior_countries = []
+    if args.merge_with_existing and os.path.exists(args.out):
+        with open(args.out, encoding="utf-8") as f:
+            prior = json.load(f)
+        prior_reviews = prior.get("all_reviews", [])
+        prior_countries = prior.get("app", {}).get("countries", [])
+        seen = {(r.get("id") or r.get("text")) for r in all_reviews}
+        merged = list(all_reviews)
+        added = 0
+        for r in prior_reviews:
+            key = r.get("id") or r.get("text")
+            if key in seen:
+                continue
+            seen.add(key)
+            merged.append(r)
+            added += 1
+        print(f"  Merging with existing {args.out}: +{added} reviews carried over ({len(prior_reviews)} prior, {len(merged)} total)")
+        all_reviews = merged
+
     if args.debug:
         by_source = defaultdict(list)
         for r in all_reviews:
@@ -424,7 +455,11 @@ def main():
         print(f"  {feature}: {len(items)} mentions")
 
     output = {
-        "app": {"play_id": args.play_id, "appstore_id": args.appstore_id, "countries": countries},
+        "app": {
+            "play_id": args.play_id,
+            "appstore_id": args.appstore_id,
+            "countries": sorted(set(countries) | set(prior_countries)),
+        },
         "total_reviews_fetched": len(all_reviews),
         "all_reviews": all_reviews,
         "feature_requests": {
