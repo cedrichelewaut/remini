@@ -7,18 +7,19 @@ noted inline. Last updated against the dataset committed alongside this file.
 
 ## Coverage status
 
-- **9,827 total reviews** fetched (7,760+ App Store across ~19 countries capped at
-  ~500/country by Apple's RSS feed; ~1,100+ Play Store, still rate-limited on most
-  countries — see "Open issues" below).
-- **English: 3,511 reviews**, fully screened (regex classifier + manual read of
+- **10,627 total reviews** fetched (9,510 App Store across ~19 countries capped
+  at ~500/country by Apple's RSS feed; 1,117 Play Store, still rate-limited on
+  most countries — see "Open issues" below). Grew from 9,827 as later CI runs
+  pulled additional recent reviews, merged in rather than replacing prior data.
+- **English: 3,888 reviews**, fully screened (regex classifier + manual read of
   everything that didn't match a category).
-- **Non-English: 5,092 reviews (52% of corpus).** 4,536 covered by
+- **Non-English: 6,739 reviews (63% of corpus).** 4,783 covered by
   `classify_multilingual.py` across 14 languages (es, tr, pt, it, fr, vi, th, ja,
   ko, de, id, pl, nl, ru) — request-signal + category-keyword classification, plus
   a full manual read of every review that matched a signal but no category.
-- **Not yet screened: ~1,780 reviews (18% of total)** — ~1,224 are "unknown"
+- **Not yet screened: ~1,956 reviews (18% of total)** — mostly "unknown"
   language (too short to classify, mostly emoji/one-word praise, low expected
-  value) and ~556 are a long tail of 60+ languages at 1-80 reviews each (Malay,
+  value) plus a long tail of 60+ languages at 1-80 reviews each (Malay,
   Arabic, Romanian, Ukrainian, Hindi, Chinese, etc.) — individually too small to
   justify a dedicated pattern set, but available if a specific market becomes a
   priority.

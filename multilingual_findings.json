@@ -1,19 +1,19 @@
 {
-  "screened": 4536,
+  "screened": 4783,
   "lang_counts": {
-    "pt": 437,
-    "es": 872,
-    "fr": 378,
-    "de": 285,
-    "tr": 481,
-    "ru": 66,
-    "vi": 370,
-    "nl": 59,
+    "pt": 440,
+    "es": 895,
+    "fr": 401,
     "it": 381,
-    "id": 141,
+    "nl": 65,
+    "ru": 69,
+    "de": 286,
     "th": 351,
     "pl": 60,
-    "ko": 316,
+    "id": 281,
+    "tr": 483,
+    "vi": 375,
+    "ko": 357,
     "ja": 339
   },
   "feature_requests": {
@@ -42,14 +42,47 @@
       },
       {
         "source": "app_store",
-        "id": "14238271095",
-        "country": "de",
-        "author": "Nadys….",
+        "id": "14237937711",
+        "country": "br",
+        "author": "cr710710",
+        "rating": 1,
+        "date": "2026-06-28T11:47:09-07:00",
+        "text": "Perdeu muita qualidade nas configurações, fotos embasadas, desfiguradas, e também quando seleciona mais de uma opção de edição desconfiguração a foto",
+        "_lang": "pt",
+        "matched_language": "pt"
+      },
+      {
+        "source": "app_store",
+        "id": "14230322606",
+        "country": "br",
+        "author": "lulamoluscow",
         "rating": 2,
-        "date": "2026-06-28T13:41:32-07:00",
-        "text": "Слишком много рекламы и навязчивых платных предложений. Для простой задачи, например получения одного фото, приходится тратить слишком много времени на просмотр рекламы и постоянные ограничения. Создаётся впечатление, что удобство пользователя отошло на второй план. Хотелось бы больше доступных функций без лишних препятствий и навязывания подписок. ⭐⭐☆☆☆ а так программа хорошая",
-        "_lang": "ru",
-        "matched_language": "ru"
+        "date": "2026-06-26T15:09:53-07:00",
+        "text": "Gosto do app, mas acredito que depois que houve uma atualização, na opção MELHORAR FOTO antes o foco era principalmente recuperar detalhes reais (nitidez, textura da pele, olhos, cabelo etc.). Hoje, muitos dos modelos de IA usados pelo Remini fazem uma reconstrução generativa da imagem. Ou seja, em vez de apenas melhorar a foto, a IA “inventa” algo. Por favor voltem a versão no qual posso melhorar a foto como um todo, e não fazer com que meu rosto pareça a de um boneco :)",
+        "_lang": "pt",
+        "matched_language": "pt"
+      },
+      {
+        "source": "app_store",
+        "id": "14212664786",
+        "country": "br",
+        "author": "Privacy Scret",
+        "rating": 5,
+        "date": "2026-06-22T05:26:30-07:00",
+        "text": "O App com certeza é o melhor! Não conheço outro que melhore tão bem as fotos!! Logo espero que dê pra melhorar a qualidade de vídeos",
+        "_lang": "pt",
+        "matched_language": "pt"
+      },
+      {
+        "source": "app_store",
+        "id": "14207447684",
+        "country": "br",
+        "author": "Cadu Engenheiro",
+        "rating": 5,
+        "date": "2026-06-20T19:25:18-07:00",
+        "text": "Adoraria assinar mas 49 reais por semana para usar de vez em quando não dá , poderiam criar um plano estudante mais acessível .",
+        "_lang": "pt",
+        "matched_language": "pt"
       },
       {
         "source": "app_store",
@@ -75,12 +108,122 @@
       },
       {
         "source": "app_store",
+        "id": "14324795575",
+        "country": "id",
+        "author": "Miiilanst",
+        "rating": 2,
+        "date": "2026-07-19T20:19:53-07:00",
+        "text": "Udah lama pake remini,tapi kenapa makin kesini editan filternya jdi gaur \nKdg saya cuma pake buat jernih ajaa tapi stelah di save otomatis matanya kena filter.tolong jgn otomatis🙌",
+        "_lang": "id",
+        "matched_language": "id"
+      },
+      {
+        "source": "app_store",
+        "id": "14312431558",
+        "country": "id",
+        "author": "Siennaa31",
+        "rating": 1,
+        "date": "2026-07-16T18:54:22-07:00",
+        "text": "Plissssss reminiii sekarang hasil editannya jelekkkkk bangettt makin aneh dan lebayyy. Tolong balikin versi yg duluuuu donggggg.",
+        "_lang": "id",
+        "matched_language": "id"
+      },
+      {
+        "source": "app_store",
+        "id": "14285789786",
+        "country": "id",
+        "author": "Kalsel tapin",
+        "rating": 1,
+        "date": "2026-07-10T04:49:43-07:00",
+        "text": "Udah 1 bulan lebih gk ada perubahan, gk ada perbaikab, tolong lah keluhannya didengar. Hasilnya fotonya skenrg lucu kaya keliatan bnget editannya mukanya kaya anime jadinya.",
+        "_lang": "id",
+        "matched_language": "id"
+      },
+      {
+        "source": "app_store",
+        "id": "14280465901",
+        "country": "id",
+        "author": "MustafaArfina",
+        "rating": 2,
+        "date": "2026-07-08T20:24:05-07:00",
+        "text": "Tolong iklanya jangn trllu panjang,memakan waktu trllu lama menunggu",
+        "_lang": "id",
+        "matched_language": "id"
+      },
+      {
+        "source": "app_store",
+        "id": "14247325041",
+        "country": "id",
+        "author": "story-parfume",
+        "rating": 5,
+        "date": "2026-06-30T17:39:13-07:00",
+        "text": "kenapa semakin lama semakin aneh wajah nya, terlalu tebal dan lebay wajah orang yg di edit tolong lah remini kembalikan editan kayak dulu lagi yg smooth",
+        "_lang": "id",
+        "matched_language": "id"
+      },
+      {
+        "source": "app_store",
+        "id": "14239864037",
+        "country": "id",
+        "author": "KarissaAzriel",
+        "rating": 5,
+        "date": "2026-06-29T00:32:13-07:00",
+        "text": "Hasil editan potonya bagus dan menarik membuat wajah lebih cantik, tapi mohon di natural in lagi supaya tidak seperti di edit",
+        "_lang": "id",
+        "matched_language": "id"
+      },
+      {
+        "source": "app_store",
+        "id": "14230144938",
+        "country": "id",
+        "author": "Palm sugar12",
+        "rating": 5,
+        "date": "2026-06-26T14:02:57-07:00",
+        "text": "Semoga kedepannya bisa lebih ditingkatkan lagi dan dikurangi iklannya, terima kasih",
+        "_lang": "id",
+        "matched_language": "id"
+      },
+      {
+        "source": "app_store",
+        "id": "14212141726",
+        "country": "id",
+        "author": "torianputra",
+        "rating": 1,
+        "date": "2026-06-22T02:04:55-07:00",
+        "text": "Udah ambil yang pro, tapi kualitasya over banget, gimana tolong dperbaiki",
+        "_lang": "id",
+        "matched_language": "id"
+      },
+      {
+        "source": "app_store",
+        "id": "14211066939",
+        "country": "id",
+        "author": "Sarisrr",
+        "rating": 3,
+        "date": "2026-06-21T17:55:56-07:00",
+        "text": "Bagus sih cuma kadang lain di edit lain yg tersimpan jdi nya terlalu menor padahal sebelum di simpan editan nya bagus tolong di cek gimana knp begitu trs",
+        "_lang": "id",
+        "matched_language": "id"
+      },
+      {
+        "source": "app_store",
         "id": "14461055064",
         "country": "us",
         "author": "Jean amador",
         "rating": 5,
         "date": "2026-08-22T20:16:52-07:00",
         "text": "Por favor solo quiten las manchas al hacer el arreglo en las fotos",
+        "_lang": "es",
+        "matched_language": "es"
+      },
+      {
+        "source": "app_store",
+        "id": "14106424710",
+        "country": "us",
+        "author": "Leon89000",
+        "rating": 3,
+        "date": "2026-05-25T18:21:25-07:00",
+        "text": "Muy buena para corregir fotos borrosas lo único malo demasiados anuncias debería haber mas reward gratis",
         "_lang": "es",
         "matched_language": "es"
       },
@@ -174,14 +317,91 @@
       },
       {
         "source": "app_store",
-        "id": "13209617045",
-        "country": "mx",
-        "author": "Molly Cervi",
+        "id": "9174301148",
+        "country": "pl",
+        "author": "weradior",
+        "rating": 3,
+        "date": "2022-10-11T09:48:47-07:00",
+        "text": "Nie mogę pobrać nwm czemu kręci mi się kółeczko i nie chce się pobrać proszę naprawcze to",
+        "_lang": "pl",
+        "matched_language": "pl"
+      },
+      {
+        "source": "app_store",
+        "id": "14238271095",
+        "country": "de",
+        "author": "Nadys….",
+        "rating": 2,
+        "date": "2026-06-28T13:41:32-07:00",
+        "text": "Слишком много рекламы и навязчивых платных предложений. Для простой задачи, например получения одного фото, приходится тратить слишком много времени на просмотр рекламы и постоянные ограничения. Создаётся впечатление, что удобство пользователя отошло на второй план. Хотелось бы больше доступных функций без лишних препятствий и навязывания подписок. ⭐⭐☆☆☆ а так программа хорошая",
+        "_lang": "ru",
+        "matched_language": "ru"
+      },
+      {
+        "source": "app_store",
+        "id": "13171784365",
+        "country": "de",
+        "author": "Lena schmust",
+        "rating": 4,
+        "date": "2025-09-22T14:42:18-07:00",
+        "text": "Gute App aber es sollte mehr umsonst sein",
+        "_lang": "de",
+        "matched_language": "de"
+      },
+      {
+        "source": "app_store",
+        "id": "12627346755",
+        "country": "de",
+        "author": "Карина яяяя",
+        "rating": 3,
+        "date": "2025-05-06T14:25:57-07:00",
+        "text": "Было бы хорошо если было бы меньше реклам",
+        "_lang": "ru",
+        "matched_language": "ru"
+      },
+      {
+        "source": "app_store",
+        "id": "12513630348",
+        "country": "de",
+        "author": "Mario-U.",
+        "rating": 3,
+        "date": "2025-04-06T23:26:37-07:00",
+        "text": "Nachtrag: leider geht die Verlinkung öffnen mit, mit der App nicht. Bitte nachbessern!\n\nZum verbessern von Fotos gut geeignet, manchmal ist es zuviel des Guten. Videos, sorry, sind einfach nur grausam. Was die KI da fabriziert ist ungenügend. Andere Apps machen es viel besser, sind aber auch teurer. Nehmt die Videofunktionen raus, die ruinieren euch gute Bewertungen.",
+        "_lang": "de",
+        "matched_language": "de"
+      },
+      {
+        "source": "app_store",
+        "id": "12199624595",
+        "country": "de",
+        "author": "Kaan2607",
         "rating": 1,
-        "date": "2025-10-01T08:04:43-07:00",
-        "text": "Por favor como me pueden devolver el dinero que me cobraron.",
-        "_lang": "es",
-        "matched_language": "es"
+        "date": "2025-01-18T07:21:12-07:00",
+        "text": "Hab mir die Premium Version gekauft für AI Fotos, größter Fehlkauf die generierten Fotos haben nichtmal ansatzweise was mit meinem Gesicht zu tun.\nBitte nicht kaufen!!!!",
+        "_lang": "de",
+        "matched_language": "de"
+      },
+      {
+        "source": "app_store",
+        "id": "14122815979",
+        "country": "it",
+        "author": "Franacqua",
+        "rating": 4,
+        "date": "2026-05-30T03:19:31-07:00",
+        "text": "Molto utile come app tranne per l’opzione di modificare le foto vecchie perché le rovina e basta",
+        "_lang": "it",
+        "matched_language": "it"
+      },
+      {
+        "source": "app_store",
+        "id": "13629264759",
+        "country": "it",
+        "author": "anmrdn",
+        "rating": 2,
+        "date": "2026-01-13T08:35:59-07:00",
+        "text": "Fa il suo lavoro perfettamente, però ogni volta devo cancellare e reinstallare l’app perché si blocca e non va nulla. Potete risolvere per favore.",
+        "_lang": "it",
+        "matched_language": "it"
       },
       {
         "source": "app_store",
@@ -328,25 +548,201 @@
       },
       {
         "source": "app_store",
-        "id": "14122815979",
-        "country": "it",
-        "author": "Franacqua",
-        "rating": 4,
-        "date": "2026-05-30T03:19:31-07:00",
-        "text": "Molto utile come app tranne per l’opzione di modificare le foto vecchie perché le rovina e basta",
-        "_lang": "it",
-        "matched_language": "it"
+        "id": "13222065890",
+        "country": "kr",
+        "author": "Doradoraair",
+        "rating": 5,
+        "date": "2025-10-04T04:24:58-07:00",
+        "text": "ภาพแต่งออกมาสวยมาก อยากให้เพิ่มการใช้งานฟรี ต่อวันให้หลายๆภาพต่อวันค่ะ",
+        "_lang": "th",
+        "matched_language": "th"
       },
       {
         "source": "app_store",
-        "id": "13629264759",
-        "country": "it",
-        "author": "anmrdn",
+        "id": "12167034210",
+        "country": "kr",
+        "author": "별로임1",
+        "rating": 5,
+        "date": "2025-01-10T04:57:30-07:00",
+        "text": "진짜 좋아요 그동안 써본 업스케일링\n앱중에서 제일 좋아요 비싼것만 빼고 업스케일링 성능 진짜 좋아요 아 그리고 사진 여러개 선택해서 한번에 해주는 기능도 있으면 좋겠어요 하나하나 선택하는게\n좀 불편하네요",
+        "_lang": "ko",
+        "matched_language": "ko"
+      },
+      {
+        "source": "app_store",
+        "id": "11483308909",
+        "country": "kr",
+        "author": "데이지덕72",
+        "rating": 1,
+        "date": "2024-07-11T22:34:18-07:00",
+        "text": "결제 취소 바랍니다.",
+        "_lang": "ko",
+        "matched_language": "ko"
+      },
+      {
+        "source": "app_store",
+        "id": "11364759946",
+        "country": "kr",
+        "author": "영영이 0905",
+        "rating": 1,
+        "date": "2024-06-10T03:49:19-07:00",
+        "text": "환불 빨리 부탁드립니다. 안 해주시면 가만히 안있습니다^^",
+        "_lang": "ko",
+        "matched_language": "ko"
+      },
+      {
+        "source": "app_store",
+        "id": "11302201938",
+        "country": "kr",
+        "author": "제발령!!!!!!!!!!!!!!",
+        "rating": 3,
+        "date": "2024-05-24T08:32:50-07:00",
+        "text": "자연스럽게 개선하고 싶은데 자동보정 이상하게\n돼요 없이 설정하는 것도 추가해주세요ㅠ",
+        "_lang": "ko",
+        "matched_language": "ko"
+      },
+      {
+        "source": "app_store",
+        "id": "10816538148",
+        "country": "kr",
+        "author": "라블린",
+        "rating": 1,
+        "date": "2024-01-13T02:00:57-07:00",
+        "text": "무료구독눌렀는데 14000원 일주 결제됨 하..어플사용안하고 바로삭제했고 애플측에 환불요청했으니 원치않는 미사용구독 환불바랍니다",
+        "_lang": "ko",
+        "matched_language": "ko"
+      },
+      {
+        "source": "app_store",
+        "id": "10711568774",
+        "country": "kr",
+        "author": "뚫할",
+        "rating": 5,
+        "date": "2023-12-18T04:25:23-07:00",
+        "text": "동영상 길이도 용량에따라 5~15초 맥시멈이구.. 보정 단계가 좀더 세분화되있어도 좋을 것 같아요 터치로 하든지 밝기 조절이니 명암 조절이나 이런게 좀더되면 좋겠어요 . 2차보정을 늘 더해야됨. \n\n돈비싸도좋으니 선명하게 보정되는거 세분화 조절할수있는 디텔조정 가능하게 만들어주세요 . \n\n어떤 사진은 너무 과해서 인위적임 ㅠㅠ",
+        "_lang": "ko",
+        "matched_language": "ko"
+      },
+      {
+        "source": "app_store",
+        "id": "10199540046",
+        "country": "kr",
+        "author": "카타위닡",
+        "rating": 1,
+        "date": "2023-07-30T06:38:34-07:00",
+        "text": "아니 7일무료라해서 7일째되는날 구독 취소했는데 돈이 왜빠져나가요? 환불해주세요 장난하는것도아니고 환불해주시기 바랍니다",
+        "_lang": "ko",
+        "matched_language": "ko"
+      },
+      {
+        "source": "app_store",
+        "id": "9138309202",
+        "country": "kr",
+        "author": "efnhui",
         "rating": 2,
-        "date": "2026-01-13T08:35:59-07:00",
-        "text": "Fa il suo lavoro perfettamente, però ogni volta devo cancellare e reinstallare l’app perché si blocca e non va nulla. Potete risolvere per favore.",
-        "_lang": "it",
-        "matched_language": "it"
+        "date": "2022-09-30T18:51:30-07:00",
+        "text": "화질개선이 꼭 얼굴이 들어간 사진에만 필요한 게 아닌데... 어떻게든 얼굴을 만들어내며 이상한곳에 눈을 창조하는걸 보고 충격받았어요 제발 개선해주세요ㅠ\n그래도 그거 빼면 (그걸 빼기엔 너무 타격이 크지만) 화질개선 너무 좋아요",
+        "_lang": "ko",
+        "matched_language": "ko"
+      },
+      {
+        "source": "app_store",
+        "id": "8981715356",
+        "country": "kr",
+        "author": "애옹이포토크래퍼",
+        "rating": 4,
+        "date": "2022-08-15T09:19:54-07:00",
+        "text": "한달 사용 월정액이 조금은 저렴 하면은 좋겠어요. 무제한이라 그럴수 있을수 있겠지만.. 그래도 지금 보다 조금은 저렴 하다면 다른분들도 부담 없이 사용 할수 있고 참 좋을거 같아요^^",
+        "_lang": "ko",
+        "matched_language": "ko"
+      },
+      {
+        "source": "app_store",
+        "id": "8806455686",
+        "country": "kr",
+        "author": "불닭마요네즈",
+        "rating": 5,
+        "date": "2022-06-24T10:18:58-07:00",
+        "text": "앱 잘 쓰고 있습니다\n저는 데스크탑 웹 레미니도 애용 중인데요,\n둘을 묶어서 구독할 수 있었으면 좋겠습니다.",
+        "_lang": "ko",
+        "matched_language": "ko"
+      },
+      {
+        "source": "app_store",
+        "id": "14158889447",
+        "country": "jp",
+        "author": "ေဇယ်ာ၀င္း",
+        "rating": 5,
+        "date": "2026-06-08T09:09:00-07:00",
+        "text": "無料で使い事にお願いします。",
+        "_lang": "ja",
+        "matched_language": "ja"
+      },
+      {
+        "source": "app_store",
+        "id": "14061044914",
+        "country": "jp",
+        "author": "kinhajp1978",
+        "rating": 5,
+        "date": "2026-05-13T12:58:41-07:00",
+        "text": "Sempre deixa um resultado impecável, várias soluções para cada caso. Muito grata por existir esse app, trouxe vida às minhas memórias, mesmo usando as funções gratuitas! Que continuem fazendo muito sucesso e seguindo essa linha de dar qualidade ao experimentar e opção de decidir se compramos ou não.\nJá até comprei uns pacotes na versão web de tanto que compensa! Obrigada de coração ❤️",
+        "_lang": "pt",
+        "matched_language": "pt"
+      },
+      {
+        "source": "app_store",
+        "id": "13819654838",
+        "country": "jp",
+        "author": "にゃにゃちゃんママ",
+        "rating": 5,
+        "date": "2026-03-06T05:48:07-07:00",
+        "text": "いつも助かります🙏大好きなアプリです🫶🏻リミニなかったら無理です。これからもよろしくお願いします。",
+        "_lang": "ja",
+        "matched_language": "ja"
+      },
+      {
+        "source": "app_store",
+        "id": "12590650623",
+        "country": "jp",
+        "author": "JDM4024",
+        "rating": 1,
+        "date": "2025-04-26T21:10:54-07:00",
+        "text": "とにかく課金要素が多すぎるので\n無料にして欲しいです。",
+        "_lang": "ja",
+        "matched_language": "ja"
+      },
+      {
+        "source": "app_store",
+        "id": "12578349077",
+        "country": "jp",
+        "author": "ロブロ界隈の人",
+        "rating": 3,
+        "date": "2025-04-23T15:23:11-07:00",
+        "text": "とてもすごいと思います\nほかのアプリでは高画質をすると粘土加工のようになるからこのような高画質になるアプリを求めていました❕少し嫌だなと思う所は有料をおすすめしてくる事です。他のアプリでもすすめてくるのですが、このアプリは必ず高画質する前に有料を勧めてくるので嫌だなと思いました。\nただ広告を見れば無料になるのでそれは嬉しいです🤙🏻🩷\nこのアプリを知らない人に知って欲しいです！🤝🏻♡",
+        "_lang": "ja",
+        "matched_language": "ja"
+      },
+      {
+        "source": "app_store",
+        "id": "12438411764",
+        "country": "jp",
+        "author": "にわとりこけこけけ",
+        "rating": 4,
+        "date": "2025-03-19T04:20:00-07:00",
+        "text": "高画質機能が凄い性能良く感じます！画質によっては仕上がりが悪くなっちゃうけど、正確性があってよく使わせて貰っています！\n前にあったキス機能がめっちゃ面白かったです！短期間でも良いのでまた復活して欲しいです！",
+        "_lang": "ja",
+        "matched_language": "ja"
+      },
+      {
+        "source": "app_store",
+        "id": "12365823587",
+        "country": "jp",
+        "author": "be0001",
+        "rating": 3,
+        "date": "2025-02-28T10:05:34-07:00",
+        "text": "プレビューサイズが最初から全体が見える様にして欲しいです。\nUIに関して横画面にも対応して欲しい。\n金額面で高額過ぎると思うます。\n特に年額は他のアプリと比較しても高額過ぎると思う。試用期間で購入まで続けるか微妙です。",
+        "_lang": "ja",
+        "matched_language": "ja"
       },
       {
         "source": "app_store",
@@ -548,413 +944,6 @@
       },
       {
         "source": "app_store",
-        "id": "9174301148",
-        "country": "pl",
-        "author": "weradior",
-        "rating": 3,
-        "date": "2022-10-11T09:48:47-07:00",
-        "text": "Nie mogę pobrać nwm czemu kręci mi się kółeczko i nie chce się pobrać proszę naprawcze to",
-        "_lang": "pl",
-        "matched_language": "pl"
-      },
-      {
-        "source": "app_store",
-        "id": "13638053661",
-        "country": "fr",
-        "author": "Smoke 22",
-        "rating": 1,
-        "date": "2026-01-15T16:42:44-07:00",
-        "text": "La seule chose possible de faire avec cette application c’est regarder des pubs… vous ouvrez l’application, vous êtes obligé de regarder plusieurs minutes de pub avant de pouvoir retoucher votre photo et une fois que vous arrivez à l’option de retouche, l’application ne fonctionne plus… impossible de modifier la photo, impossible de l’enregistrer… la seule option qui fonctionne : retourner à l’accueil pour regarder encore des pubs 💀",
-        "_lang": "fr",
-        "matched_language": "fr"
-      },
-      {
-        "source": "app_store",
-        "id": "13222065890",
-        "country": "kr",
-        "author": "Doradoraair",
-        "rating": 5,
-        "date": "2025-10-04T04:24:58-07:00",
-        "text": "ภาพแต่งออกมาสวยมาก อยากให้เพิ่มการใช้งานฟรี ต่อวันให้หลายๆภาพต่อวันค่ะ",
-        "_lang": "th",
-        "matched_language": "th"
-      },
-      {
-        "source": "app_store",
-        "id": "12167034210",
-        "country": "kr",
-        "author": "별로임1",
-        "rating": 5,
-        "date": "2025-01-10T04:57:30-07:00",
-        "text": "진짜 좋아요 그동안 써본 업스케일링\n앱중에서 제일 좋아요 비싼것만 빼고 업스케일링 성능 진짜 좋아요 아 그리고 사진 여러개 선택해서 한번에 해주는 기능도 있으면 좋겠어요 하나하나 선택하는게\n좀 불편하네요",
-        "_lang": "ko",
-        "matched_language": "ko"
-      },
-      {
-        "source": "app_store",
-        "id": "11483308909",
-        "country": "kr",
-        "author": "데이지덕72",
-        "rating": 1,
-        "date": "2024-07-11T22:34:18-07:00",
-        "text": "결제 취소 바랍니다.",
-        "_lang": "ko",
-        "matched_language": "ko"
-      },
-      {
-        "source": "app_store",
-        "id": "11364759946",
-        "country": "kr",
-        "author": "영영이 0905",
-        "rating": 1,
-        "date": "2024-06-10T03:49:19-07:00",
-        "text": "환불 빨리 부탁드립니다. 안 해주시면 가만히 안있습니다^^",
-        "_lang": "ko",
-        "matched_language": "ko"
-      },
-      {
-        "source": "app_store",
-        "id": "11302201938",
-        "country": "kr",
-        "author": "제발령!!!!!!!!!!!!!!",
-        "rating": 3,
-        "date": "2024-05-24T08:32:50-07:00",
-        "text": "자연스럽게 개선하고 싶은데 자동보정 이상하게\n돼요 없이 설정하는 것도 추가해주세요ㅠ",
-        "_lang": "ko",
-        "matched_language": "ko"
-      },
-      {
-        "source": "app_store",
-        "id": "10816538148",
-        "country": "kr",
-        "author": "라블린",
-        "rating": 1,
-        "date": "2024-01-13T02:00:57-07:00",
-        "text": "무료구독눌렀는데 14000원 일주 결제됨 하..어플사용안하고 바로삭제했고 애플측에 환불요청했으니 원치않는 미사용구독 환불바랍니다",
-        "_lang": "ko",
-        "matched_language": "ko"
-      },
-      {
-        "source": "app_store",
-        "id": "10711568774",
-        "country": "kr",
-        "author": "뚫할",
-        "rating": 5,
-        "date": "2023-12-18T04:25:23-07:00",
-        "text": "동영상 길이도 용량에따라 5~15초 맥시멈이구.. 보정 단계가 좀더 세분화되있어도 좋을 것 같아요 터치로 하든지 밝기 조절이니 명암 조절이나 이런게 좀더되면 좋겠어요 . 2차보정을 늘 더해야됨. \n\n돈비싸도좋으니 선명하게 보정되는거 세분화 조절할수있는 디텔조정 가능하게 만들어주세요 . \n\n어떤 사진은 너무 과해서 인위적임 ㅠㅠ",
-        "_lang": "ko",
-        "matched_language": "ko"
-      },
-      {
-        "source": "app_store",
-        "id": "10199540046",
-        "country": "kr",
-        "author": "카타위닡",
-        "rating": 1,
-        "date": "2023-07-30T06:38:34-07:00",
-        "text": "아니 7일무료라해서 7일째되는날 구독 취소했는데 돈이 왜빠져나가요? 환불해주세요 장난하는것도아니고 환불해주시기 바랍니다",
-        "_lang": "ko",
-        "matched_language": "ko"
-      },
-      {
-        "source": "app_store",
-        "id": "9138309202",
-        "country": "kr",
-        "author": "efnhui",
-        "rating": 2,
-        "date": "2022-09-30T18:51:30-07:00",
-        "text": "화질개선이 꼭 얼굴이 들어간 사진에만 필요한 게 아닌데... 어떻게든 얼굴을 만들어내며 이상한곳에 눈을 창조하는걸 보고 충격받았어요 제발 개선해주세요ㅠ\n그래도 그거 빼면 (그걸 빼기엔 너무 타격이 크지만) 화질개선 너무 좋아요",
-        "_lang": "ko",
-        "matched_language": "ko"
-      },
-      {
-        "source": "app_store",
-        "id": "8981715356",
-        "country": "kr",
-        "author": "애옹이포토크래퍼",
-        "rating": 4,
-        "date": "2022-08-15T09:19:54-07:00",
-        "text": "한달 사용 월정액이 조금은 저렴 하면은 좋겠어요. 무제한이라 그럴수 있을수 있겠지만.. 그래도 지금 보다 조금은 저렴 하다면 다른분들도 부담 없이 사용 할수 있고 참 좋을거 같아요^^",
-        "_lang": "ko",
-        "matched_language": "ko"
-      },
-      {
-        "source": "app_store",
-        "id": "8806455686",
-        "country": "kr",
-        "author": "불닭마요네즈",
-        "rating": 5,
-        "date": "2022-06-24T10:18:58-07:00",
-        "text": "앱 잘 쓰고 있습니다\n저는 데스크탑 웹 레미니도 애용 중인데요,\n둘을 묶어서 구독할 수 있었으면 좋겠습니다.",
-        "_lang": "ko",
-        "matched_language": "ko"
-      },
-      {
-        "source": "app_store",
-        "id": "14457801392",
-        "country": "vn",
-        "author": "🌺MèoCon2026🌸",
-        "rating": 1,
-        "date": "2026-08-22T00:46:39-07:00",
-        "text": "Remini nên coi lại cái cách tối ưu đi á nha 😣 vừa đăng nhập vào là cái giao diện nó lag gì đâu á 😤 chả tạo được cái gì 🙄, cứ xoay vòng vòng mãi😒, vuốt qua vuốt giật điên cả người 🤬, iPhone 7 đó nha má🙄, cái app này nên tương thích lên iOS 16 đi là vừa😒, bộ chèn gì vào hay sao mà nó lag dữ vậy🙄",
-        "_lang": "vi",
-        "matched_language": "vi"
-      },
-      {
-        "source": "app_store",
-        "id": "14158889447",
-        "country": "jp",
-        "author": "ေဇယ်ာ၀င္း",
-        "rating": 5,
-        "date": "2026-06-08T09:09:00-07:00",
-        "text": "無料で使い事にお願いします。",
-        "_lang": "ja",
-        "matched_language": "ja"
-      },
-      {
-        "source": "app_store",
-        "id": "14061044914",
-        "country": "jp",
-        "author": "kinhajp1978",
-        "rating": 5,
-        "date": "2026-05-13T12:58:41-07:00",
-        "text": "Sempre deixa um resultado impecável, várias soluções para cada caso. Muito grata por existir esse app, trouxe vida às minhas memórias, mesmo usando as funções gratuitas! Que continuem fazendo muito sucesso e seguindo essa linha de dar qualidade ao experimentar e opção de decidir se compramos ou não.\nJá até comprei uns pacotes na versão web de tanto que compensa! Obrigada de coração ❤️",
-        "_lang": "pt",
-        "matched_language": "pt"
-      },
-      {
-        "source": "app_store",
-        "id": "13819654838",
-        "country": "jp",
-        "author": "にゃにゃちゃんママ",
-        "rating": 5,
-        "date": "2026-03-06T05:48:07-07:00",
-        "text": "いつも助かります🙏大好きなアプリです🫶🏻リミニなかったら無理です。これからもよろしくお願いします。",
-        "_lang": "ja",
-        "matched_language": "ja"
-      },
-      {
-        "source": "app_store",
-        "id": "12590650623",
-        "country": "jp",
-        "author": "JDM4024",
-        "rating": 1,
-        "date": "2025-04-26T21:10:54-07:00",
-        "text": "とにかく課金要素が多すぎるので\n無料にして欲しいです。",
-        "_lang": "ja",
-        "matched_language": "ja"
-      },
-      {
-        "source": "app_store",
-        "id": "12578349077",
-        "country": "jp",
-        "author": "ロブロ界隈の人",
-        "rating": 3,
-        "date": "2025-04-23T15:23:11-07:00",
-        "text": "とてもすごいと思います\nほかのアプリでは高画質をすると粘土加工のようになるからこのような高画質になるアプリを求めていました❕少し嫌だなと思う所は有料をおすすめしてくる事です。他のアプリでもすすめてくるのですが、このアプリは必ず高画質する前に有料を勧めてくるので嫌だなと思いました。\nただ広告を見れば無料になるのでそれは嬉しいです🤙🏻🩷\nこのアプリを知らない人に知って欲しいです！🤝🏻♡",
-        "_lang": "ja",
-        "matched_language": "ja"
-      },
-      {
-        "source": "app_store",
-        "id": "12438411764",
-        "country": "jp",
-        "author": "にわとりこけこけけ",
-        "rating": 4,
-        "date": "2025-03-19T04:20:00-07:00",
-        "text": "高画質機能が凄い性能良く感じます！画質によっては仕上がりが悪くなっちゃうけど、正確性があってよく使わせて貰っています！\n前にあったキス機能がめっちゃ面白かったです！短期間でも良いのでまた復活して欲しいです！",
-        "_lang": "ja",
-        "matched_language": "ja"
-      },
-      {
-        "source": "app_store",
-        "id": "12365823587",
-        "country": "jp",
-        "author": "be0001",
-        "rating": 3,
-        "date": "2025-02-28T10:05:34-07:00",
-        "text": "プレビューサイズが最初から全体が見える様にして欲しいです。\nUIに関して横画面にも対応して欲しい。\n金額面で高額過ぎると思うます。\n特に年額は他のアプリと比較しても高額過ぎると思う。試用期間で購入まで続けるか微妙です。",
-        "_lang": "ja",
-        "matched_language": "ja"
-      },
-      {
-        "source": "app_store",
-        "id": "14425831837",
-        "country": "th",
-        "author": "wxrisara262504",
-        "rating": 1,
-        "date": "2026-08-14T01:08:25-07:00",
-        "text": "จะบันทึกฟรีไม่ได้แล้วจะให้จ่ายเงินอย่างเดียวเลยหรอ โฆษณาขึ้นบังคับดู แต่ไม่ได้รูป ขอให้เจ๊งไวๆแล้วกัน ก่อนหน้านี้ยังได้ฟรี5รูป เดี๋ยวนี้คือไรก่อน",
-        "_lang": "th",
-        "matched_language": "th"
-      },
-      {
-        "source": "app_store",
-        "id": "14380963840",
-        "country": "th",
-        "author": "อันจิสู",
-        "rating": 5,
-        "date": "2026-08-02T19:21:27-07:00",
-        "text": "คุณคือแอปที่ดี่สุดเท่าที่ฉันสัมผัสมา และขอให้คุณรักษาคุณภาพนี้ตลอดไป",
-        "_lang": "th",
-        "matched_language": "th"
-      },
-      {
-        "source": "app_store",
-        "id": "14237937711",
-        "country": "br",
-        "author": "cr710710",
-        "rating": 1,
-        "date": "2026-06-28T11:47:09-07:00",
-        "text": "Perdeu muita qualidade nas configurações, fotos embasadas, desfiguradas, e também quando seleciona mais de uma opção de edição desconfiguração a foto",
-        "_lang": "pt",
-        "matched_language": "pt"
-      },
-      {
-        "source": "app_store",
-        "id": "14230322606",
-        "country": "br",
-        "author": "lulamoluscow",
-        "rating": 2,
-        "date": "2026-06-26T15:09:53-07:00",
-        "text": "Gosto do app, mas acredito que depois que houve uma atualização, na opção MELHORAR FOTO antes o foco era principalmente recuperar detalhes reais (nitidez, textura da pele, olhos, cabelo etc.). Hoje, muitos dos modelos de IA usados pelo Remini fazem uma reconstrução generativa da imagem. Ou seja, em vez de apenas melhorar a foto, a IA “inventa” algo. Por favor voltem a versão no qual posso melhorar a foto como um todo, e não fazer com que meu rosto pareça a de um boneco :)",
-        "_lang": "pt",
-        "matched_language": "pt"
-      },
-      {
-        "source": "app_store",
-        "id": "14212664786",
-        "country": "br",
-        "author": "Privacy Scret",
-        "rating": 5,
-        "date": "2026-06-22T05:26:30-07:00",
-        "text": "O App com certeza é o melhor! Não conheço outro que melhore tão bem as fotos!! Logo espero que dê pra melhorar a qualidade de vídeos",
-        "_lang": "pt",
-        "matched_language": "pt"
-      },
-      {
-        "source": "app_store",
-        "id": "14207447684",
-        "country": "br",
-        "author": "Cadu Engenheiro",
-        "rating": 5,
-        "date": "2026-06-20T19:25:18-07:00",
-        "text": "Adoraria assinar mas 49 reais por semana para usar de vez em quando não dá , poderiam criar um plano estudante mais acessível .",
-        "_lang": "pt",
-        "matched_language": "pt"
-      },
-      {
-        "source": "app_store",
-        "id": "14183057884",
-        "country": "br",
-        "author": "Laurenaguiar",
-        "rating": 1,
-        "date": "2026-06-14T13:09:06-07:00",
-        "text": "Esse aprimoramento facial tem deixado com cara de IA, fica muito fake a foto e não tem a opção de desativar",
-        "_lang": "pt",
-        "matched_language": "pt"
-      },
-      {
-        "source": "app_store",
-        "id": "14180131632",
-        "country": "br",
-        "author": "Krismchd",
-        "rating": 1,
-        "date": "2026-06-13T19:31:44-07:00",
-        "text": "Se eu pago pela versão premium não acho que deveria ter marca d’água nas minhas fotos. Odiei",
-        "_lang": "pt",
-        "matched_language": "pt"
-      },
-      {
-        "source": "app_store",
-        "id": "14168318012",
-        "country": "br",
-        "author": "pequenowell",
-        "rating": 5,
-        "date": "2026-06-10T19:30:16-07:00",
-        "text": "Deveria mudar o valor do plano de semanal pra mensal, pobre não tem como pagar por semana 😉\nObrigado/de nada",
-        "_lang": "pt",
-        "matched_language": "pt"
-      },
-      {
-        "source": "app_store",
-        "id": "14003428586",
-        "country": "br",
-        "author": "carol patitu",
-        "rating": 5,
-        "date": "2026-04-27T12:26:11-07:00",
-        "text": "Eu usava antes era muito bom! Mas tenho notado que tem mudado um pouco o rosto. Isso não é legal. Deveria ter opção de deixar mais natural sem interferir na expressão da pessoa! Antes era assim.",
-        "_lang": "pt",
-        "matched_language": "pt"
-      },
-      {
-        "source": "app_store",
-        "id": "13976638607",
-        "country": "br",
-        "author": "queridinho favorito",
-        "rating": 5,
-        "date": "2026-04-19T18:03:09-07:00",
-        "text": "maravilhoso deveria deixar mais acesso grátis",
-        "_lang": "pt",
-        "matched_language": "pt"
-      },
-      {
-        "source": "app_store",
-        "id": "13171784365",
-        "country": "de",
-        "author": "Lena schmust",
-        "rating": 4,
-        "date": "2025-09-22T14:42:18-07:00",
-        "text": "Gute App aber es sollte mehr umsonst sein",
-        "_lang": "de",
-        "matched_language": "de"
-      },
-      {
-        "source": "app_store",
-        "id": "12627346755",
-        "country": "de",
-        "author": "Карина яяяя",
-        "rating": 3,
-        "date": "2025-05-06T14:25:57-07:00",
-        "text": "Было бы хорошо если было бы меньше реклам",
-        "_lang": "ru",
-        "matched_language": "ru"
-      },
-      {
-        "source": "app_store",
-        "id": "12513630348",
-        "country": "de",
-        "author": "Mario-U.",
-        "rating": 3,
-        "date": "2025-04-06T23:26:37-07:00",
-        "text": "Nachtrag: leider geht die Verlinkung öffnen mit, mit der App nicht. Bitte nachbessern!\n\nZum verbessern von Fotos gut geeignet, manchmal ist es zuviel des Guten. Videos, sorry, sind einfach nur grausam. Was die KI da fabriziert ist ungenügend. Andere Apps machen es viel besser, sind aber auch teurer. Nehmt die Videofunktionen raus, die ruinieren euch gute Bewertungen.",
-        "_lang": "de",
-        "matched_language": "de"
-      },
-      {
-        "source": "app_store",
-        "id": "12199624595",
-        "country": "de",
-        "author": "Kaan2607",
-        "rating": 1,
-        "date": "2025-01-18T07:21:12-07:00",
-        "text": "Hab mir die Premium Version gekauft für AI Fotos, größter Fehlkauf die generierten Fotos haben nichtmal ansatzweise was mit meinem Gesicht zu tun.\nBitte nicht kaufen!!!!",
-        "_lang": "de",
-        "matched_language": "de"
-      },
-      {
-        "source": "app_store",
-        "id": "14197680160",
-        "country": "vn",
-        "author": "Celina_Feng",
-        "rating": 1,
-        "date": "2026-06-18T08:04:14-07:00",
-        "text": "Trước đây enhance ảnh rất đẹp, giờ bị bệt màu, chỉnh méo hết cả mặt trông rất kinh, làm ơn trả lại bản cũ đi",
-        "_lang": "vi",
-        "matched_language": "vi"
-      },
-      {
-        "source": "app_store",
         "id": "14132437664",
         "country": "tr",
         "author": "Zeynf",
@@ -1087,6 +1076,28 @@
       },
       {
         "source": "app_store",
+        "id": "14425831837",
+        "country": "th",
+        "author": "wxrisara262504",
+        "rating": 1,
+        "date": "2026-08-14T01:08:25-07:00",
+        "text": "จะบันทึกฟรีไม่ได้แล้วจะให้จ่ายเงินอย่างเดียวเลยหรอ โฆษณาขึ้นบังคับดู แต่ไม่ได้รูป ขอให้เจ๊งไวๆแล้วกัน ก่อนหน้านี้ยังได้ฟรี5รูป เดี๋ยวนี้คือไรก่อน",
+        "_lang": "th",
+        "matched_language": "th"
+      },
+      {
+        "source": "app_store",
+        "id": "14380963840",
+        "country": "th",
+        "author": "อันจิสู",
+        "rating": 5,
+        "date": "2026-08-02T19:21:27-07:00",
+        "text": "คุณคือแอปที่ดี่สุดเท่าที่ฉันสัมผัสมา และขอให้คุณรักษาคุณภาพนี้ตลอดไป",
+        "_lang": "th",
+        "matched_language": "th"
+      },
+      {
+        "source": "app_store",
         "id": "14108819433",
         "country": "th",
         "author": "kuymakkkisus",
@@ -1095,6 +1106,105 @@
         "text": "They charged my account and refused to refund me, even though I already explained that I didn’t mean to renew the subscription.\nหนีไปหนีไป อย่าโหลดใช้จ้า\nอิแอปนี้ขี้โกง ขอให้แอพอยู่ได้นาสๆโดยไม่เจ๊งก่อนนะสาธุ",
         "_lang": "th",
         "matched_language": "th"
+      },
+      {
+        "source": "app_store",
+        "id": "14457801392",
+        "country": "vn",
+        "author": "🌺MèoCon2026🌸",
+        "rating": 1,
+        "date": "2026-08-22T00:46:39-07:00",
+        "text": "Remini nên coi lại cái cách tối ưu đi á nha 😣 vừa đăng nhập vào là cái giao diện nó lag gì đâu á 😤 chả tạo được cái gì 🙄, cứ xoay vòng vòng mãi😒, vuốt qua vuốt giật điên cả người 🤬, iPhone 7 đó nha má🙄, cái app này nên tương thích lên iOS 16 đi là vừa😒, bộ chèn gì vào hay sao mà nó lag dữ vậy🙄",
+        "_lang": "vi",
+        "matched_language": "vi"
+      },
+      {
+        "source": "app_store",
+        "id": "14197680160",
+        "country": "vn",
+        "author": "Celina_Feng",
+        "rating": 1,
+        "date": "2026-06-18T08:04:14-07:00",
+        "text": "Trước đây enhance ảnh rất đẹp, giờ bị bệt màu, chỉnh méo hết cả mặt trông rất kinh, làm ơn trả lại bản cũ đi",
+        "_lang": "vi",
+        "matched_language": "vi"
+      },
+      {
+        "source": "app_store",
+        "id": "13209617045",
+        "country": "mx",
+        "author": "Molly Cervi",
+        "rating": 1,
+        "date": "2025-10-01T08:04:43-07:00",
+        "text": "Por favor como me pueden devolver el dinero que me cobraron.",
+        "_lang": "es",
+        "matched_language": "es"
+      },
+      {
+        "source": "app_store",
+        "id": "13638053661",
+        "country": "fr",
+        "author": "Smoke 22",
+        "rating": 1,
+        "date": "2026-01-15T16:42:44-07:00",
+        "text": "La seule chose possible de faire avec cette application c’est regarder des pubs… vous ouvrez l’application, vous êtes obligé de regarder plusieurs minutes de pub avant de pouvoir retoucher votre photo et une fois que vous arrivez à l’option de retouche, l’application ne fonctionne plus… impossible de modifier la photo, impossible de l’enregistrer… la seule option qui fonctionne : retourner à l’accueil pour regarder encore des pubs 💀",
+        "_lang": "fr",
+        "matched_language": "fr"
+      },
+      {
+        "source": "app_store",
+        "id": "14183057884",
+        "country": "br",
+        "author": "Laurenaguiar",
+        "rating": 1,
+        "date": "2026-06-14T13:09:06-07:00",
+        "text": "Esse aprimoramento facial tem deixado com cara de IA, fica muito fake a foto e não tem a opção de desativar",
+        "_lang": "pt",
+        "matched_language": "pt"
+      },
+      {
+        "source": "app_store",
+        "id": "14180131632",
+        "country": "br",
+        "author": "Krismchd",
+        "rating": 1,
+        "date": "2026-06-13T19:31:44-07:00",
+        "text": "Se eu pago pela versão premium não acho que deveria ter marca d’água nas minhas fotos. Odiei",
+        "_lang": "pt",
+        "matched_language": "pt"
+      },
+      {
+        "source": "app_store",
+        "id": "14168318012",
+        "country": "br",
+        "author": "pequenowell",
+        "rating": 5,
+        "date": "2026-06-10T19:30:16-07:00",
+        "text": "Deveria mudar o valor do plano de semanal pra mensal, pobre não tem como pagar por semana 😉\nObrigado/de nada",
+        "_lang": "pt",
+        "matched_language": "pt"
+      },
+      {
+        "source": "app_store",
+        "id": "14003428586",
+        "country": "br",
+        "author": "carol patitu",
+        "rating": 5,
+        "date": "2026-04-27T12:26:11-07:00",
+        "text": "Eu usava antes era muito bom! Mas tenho notado que tem mudado um pouco o rosto. Isso não é legal. Deveria ter opção de deixar mais natural sem interferir na expressão da pessoa! Antes era assim.",
+        "_lang": "pt",
+        "matched_language": "pt"
+      },
+      {
+        "source": "app_store",
+        "id": "13976638607",
+        "country": "br",
+        "author": "queridinho favorito",
+        "rating": 5,
+        "date": "2026-04-19T18:03:09-07:00",
+        "text": "maravilhoso deveria deixar mais acesso grátis",
+        "_lang": "pt",
+        "matched_language": "pt"
       },
       {
         "source": "app_store",
@@ -1119,17 +1229,6 @@
         "text": "Gostaria que o melhoramento das fotos fosse mais natural, mantendo características da pessoa, sem alterar a fisionomia. Somente dando nitidez e qualidade, realçando a foto. As vezes o melhoramento é bem artificial e fica parecendo outra pessoa.",
         "_lang": "pt",
         "matched_language": "pt"
-      },
-      {
-        "source": "app_store",
-        "id": "13198875545",
-        "country": "mx",
-        "author": "Sele85,",
-        "rating": 4,
-        "date": "2025-09-28T21:23:16-07:00",
-        "text": "La aplicación es fácil y muy rápida al crear imágenes,\nNo distorsiona y mejora la calidad, solo creo que el precio es elevado, ya que solo está la opción de pago por semana",
-        "_lang": "es",
-        "matched_language": "es"
       },
       {
         "source": "app_store",
@@ -1174,17 +1273,6 @@
         "text": "Yıllardır kullanıyorum son güncellemede yüzü çok yapay yapıyor lütfen düzeltin",
         "_lang": "tr",
         "matched_language": "tr"
-      },
-      {
-        "source": "app_store",
-        "id": "14108266882",
-        "country": "br",
-        "author": "Bem versátil",
-        "rating": 4,
-        "date": "2026-05-26T07:10:45-07:00",
-        "text": "Só precisa cuidar, porque a opção de melhoria por IA pode deixar a foto um pouco artificial demais",
-        "_lang": "pt",
-        "matched_language": "pt"
       },
       {
         "source": "app_store",
@@ -1273,6 +1361,28 @@
         "text": "Önceden netleştirirken çok doğal dururdu uygulama hata verdi silip yükledim şimdi öyle yapay yapıyor ki yüzü iğrenç duruyor lütfen eski haline getirin",
         "_lang": "tr",
         "matched_language": "tr"
+      },
+      {
+        "source": "app_store",
+        "id": "13198875545",
+        "country": "mx",
+        "author": "Sele85,",
+        "rating": 4,
+        "date": "2025-09-28T21:23:16-07:00",
+        "text": "La aplicación es fácil y muy rápida al crear imágenes,\nNo distorsiona y mejora la calidad, solo creo que el precio es elevado, ya que solo está la opción de pago por semana",
+        "_lang": "es",
+        "matched_language": "es"
+      },
+      {
+        "source": "app_store",
+        "id": "14108266882",
+        "country": "br",
+        "author": "Bem versátil",
+        "rating": 4,
+        "date": "2026-05-26T07:10:45-07:00",
+        "text": "Só precisa cuidar, porque a opção de melhoria por IA pode deixar a foto um pouco artificial demais",
+        "_lang": "pt",
+        "matched_language": "pt"
       }
     ],
     "ads": [
@@ -1286,17 +1396,6 @@
         "text": "Muito bom o aplicativo, cumpre o que fala e na opção de gratuito você assiste um anúncio para usufruir da tecnologia, gostei demais.",
         "_lang": "pt",
         "matched_language": "pt"
-      },
-      {
-        "source": "app_store",
-        "id": "13518012678",
-        "country": "de",
-        "author": "Murattcnn",
-        "rating": 4,
-        "date": "2025-12-15T14:29:33-07:00",
-        "text": "Bir yıldızı çok fazla reklam olduğu için eksik verdim",
-        "_lang": "tr",
-        "matched_language": "tr"
       },
       {
         "source": "app_store",
@@ -1366,6 +1465,50 @@
       },
       {
         "source": "app_store",
+        "id": "13518012678",
+        "country": "de",
+        "author": "Murattcnn",
+        "rating": 4,
+        "date": "2025-12-15T14:29:33-07:00",
+        "text": "Bir yıldızı çok fazla reklam olduğu için eksik verdim",
+        "_lang": "tr",
+        "matched_language": "tr"
+      },
+      {
+        "source": "app_store",
+        "id": "11866398965",
+        "country": "de",
+        "author": "Kunze23",
+        "rating": 4,
+        "date": "2024-10-23T09:45:42-07:00",
+        "text": "Es macht richtig Spaß, mit der App zu experimentieren. Man sollte es jedoch nicht zu ernst nehmen. \nIch konnte z.B. die von mir generierten Bewerbungsfotos nicht benutzen, da sie übertrieben viel jünger ausfallen. Die App hat zwar tatsächlich mein Aussehen getroffen, aber so habe ich eben vor zwanzig Jahren ausgesehen. Da muss man dann schon ehrlich mit sich sein. \nIst aber eine Riesengaudi im Freundeskreis, ab und zu ein Heldinnenfoto oder ein Old Money-Foto zu verschicken mit einem lustigen Spruch dazu.",
+        "_lang": "de",
+        "matched_language": "de"
+      },
+      {
+        "source": "app_store",
+        "id": "11458430753",
+        "country": "de",
+        "author": "XxAM133",
+        "rating": 1,
+        "date": "2024-07-05T03:18:37-07:00",
+        "text": "Idee gut, schöne presets. Leider kann ich keine einzige der KI generierten Bilder nutzen, da immer die Fehlermeldung „hoppla, da ist etwas schief gelaufen. Bitte versuche es erneut“ auftaucht. Dann schaut man erneut Werbung und die Fehlermeldung taucht erneut auf.",
+        "_lang": "de",
+        "matched_language": "de"
+      },
+      {
+        "source": "app_store",
+        "id": "12670404005",
+        "country": "it",
+        "author": "Elena90ele",
+        "rating": 3,
+        "date": "2025-05-18T08:39:10-07:00",
+        "text": "Dovrebbero togliere la pubblicità e farla gratis come applicazione",
+        "_lang": "it",
+        "matched_language": "it"
+      },
+      {
+        "source": "app_store",
         "id": "14061293007",
         "country": "es",
         "author": "Cristianmllork",
@@ -1421,17 +1564,6 @@
       },
       {
         "source": "app_store",
-        "id": "12670404005",
-        "country": "it",
-        "author": "Elena90ele",
-        "rating": 3,
-        "date": "2025-05-18T08:39:10-07:00",
-        "text": "Dovrebbero togliere la pubblicità e farla gratis come applicazione",
-        "_lang": "it",
-        "matched_language": "it"
-      },
-      {
-        "source": "app_store",
         "id": "14320398265",
         "country": "tr",
         "author": "Mavilim038",
@@ -1440,50 +1572,6 @@
         "text": "Çok güzel uygulama biliyorum para kazanmanız lazım ama lütfen reklam süreleri az olsun lütfennnn birden kısıtlama olmasın bari reklam izliyoruz o güzel özelliklere erişelim",
         "_lang": "tr",
         "matched_language": "tr"
-      },
-      {
-        "source": "app_store",
-        "id": "14374241652",
-        "country": "vn",
-        "author": "Cực kỳ tệ khi cập nhật",
-        "rating": 1,
-        "date": "2026-08-01T04:11:38-07:00",
-        "text": "App quảng cáo app grab food mà đứng im k hiện dấu tắt, trong khi đợi hơn 5p. Bộ thiếu tiền lắm hả.",
-        "_lang": "vi",
-        "matched_language": "vi"
-      },
-      {
-        "source": "app_store",
-        "id": "14067238240",
-        "country": "br",
-        "author": "!!!!!!!!!!!!!!!p",
-        "rating": 2,
-        "date": "2026-05-15T06:46:50-07:00",
-        "text": "O app que era ótimo agr desrespeita as pessoas com três anúncios obrigatórios pro resultado do pedido vir a quem de como deveria",
-        "_lang": "pt",
-        "matched_language": "pt"
-      },
-      {
-        "source": "app_store",
-        "id": "11866398965",
-        "country": "de",
-        "author": "Kunze23",
-        "rating": 4,
-        "date": "2024-10-23T09:45:42-07:00",
-        "text": "Es macht richtig Spaß, mit der App zu experimentieren. Man sollte es jedoch nicht zu ernst nehmen. \nIch konnte z.B. die von mir generierten Bewerbungsfotos nicht benutzen, da sie übertrieben viel jünger ausfallen. Die App hat zwar tatsächlich mein Aussehen getroffen, aber so habe ich eben vor zwanzig Jahren ausgesehen. Da muss man dann schon ehrlich mit sich sein. \nIst aber eine Riesengaudi im Freundeskreis, ab und zu ein Heldinnenfoto oder ein Old Money-Foto zu verschicken mit einem lustigen Spruch dazu.",
-        "_lang": "de",
-        "matched_language": "de"
-      },
-      {
-        "source": "app_store",
-        "id": "11458430753",
-        "country": "de",
-        "author": "XxAM133",
-        "rating": 1,
-        "date": "2024-07-05T03:18:37-07:00",
-        "text": "Idee gut, schöne presets. Leider kann ich keine einzige der KI generierten Bilder nutzen, da immer die Fehlermeldung „hoppla, da ist etwas schief gelaufen. Bitte versuche es erneut“ auftaucht. Dann schaut man erneut Werbung und die Fehlermeldung taucht erneut auf.",
-        "_lang": "de",
-        "matched_language": "de"
       },
       {
         "source": "app_store",
@@ -1539,20 +1627,31 @@
         "text": "Resimleri güzel yapıyor. Ücret istemese ve reklam izletmese keşke",
         "_lang": "tr",
         "matched_language": "tr"
+      },
+      {
+        "source": "app_store",
+        "id": "14374241652",
+        "country": "vn",
+        "author": "Cực kỳ tệ khi cập nhật",
+        "rating": 1,
+        "date": "2026-08-01T04:11:38-07:00",
+        "text": "App quảng cáo app grab food mà đứng im k hiện dấu tắt, trong khi đợi hơn 5p. Bộ thiếu tiền lắm hả.",
+        "_lang": "vi",
+        "matched_language": "vi"
+      },
+      {
+        "source": "app_store",
+        "id": "14067238240",
+        "country": "br",
+        "author": "!!!!!!!!!!!!!!!p",
+        "rating": 2,
+        "date": "2026-05-15T06:46:50-07:00",
+        "text": "O app que era ótimo agr desrespeita as pessoas com três anúncios obrigatórios pro resultado do pedido vir a quem de como deveria",
+        "_lang": "pt",
+        "matched_language": "pt"
       }
     ],
     "pricing / subscription": [
-      {
-        "source": "app_store",
-        "id": "14079972295",
-        "country": "de",
-        "author": "@Radiantbeauty",
-        "rating": 5,
-        "date": "2026-05-18T15:25:09-07:00",
-        "text": "Wer eine Fotobearbeitung sucht, ist hier genau richtig! - seitdem ich diese App habe nutze ich Sie fast Tag täglich, doch seitdem neuen Update trotz Abonnement funktioniert die App nicht mehr reibungslos, die Bilder werden haben plötzlich ein zu Hohen Kontrast, Bitte behebt dieses Problem.",
-        "_lang": "de",
-        "matched_language": "de"
-      },
       {
         "source": "app_store",
         "id": "14524041372",
@@ -1610,6 +1709,61 @@
       },
       {
         "source": "app_store",
+        "id": "14329064926",
+        "country": "id",
+        "author": "Kajshsn12377",
+        "rating": 1,
+        "date": "2026-07-20T22:26:00-07:00",
+        "text": "SALDO AKU JADI KETARIK . AKU GA BERASA LANGGANAN TAPI SALDO AKU TIBA TIBA KETARIK!!!!TOLONG SEGERA DI KEMBALIKAN DANANYA",
+        "_lang": "id",
+        "matched_language": "id"
+      },
+      {
+        "source": "app_store",
+        "id": "14228653703",
+        "country": "id",
+        "author": "Cyunkl",
+        "rating": 5,
+        "date": "2026-06-26T06:29:36-07:00",
+        "text": "Aplikasi yang sangat berguna untk mengedit foto bagi pemula mohon semakin di tingkatkan lagi dan harga nya jangan terlalu mahal",
+        "_lang": "id",
+        "matched_language": "id"
+      },
+      {
+        "source": "app_store",
+        "id": "14200546545",
+        "country": "id",
+        "author": "nailah suha",
+        "rating": 1,
+        "date": "2026-06-19T02:01:56-07:00",
+        "text": "Tolong kembalikan uang saya saya tidak ada berlangganan tapi dana saya dipotong",
+        "_lang": "id",
+        "matched_language": "id"
+      },
+      {
+        "source": "app_store",
+        "id": "14198889501",
+        "country": "id",
+        "author": "finalubis",
+        "rating": 1,
+        "date": "2026-06-18T14:33:58-07:00",
+        "text": "kenapa sekarang hasilnya jadi aneh, too much, padahal awal2 bagus lho jadi ga pengen langganan lagi, super wierd!! ga natural, tolong kembalikan seperti dulu!",
+        "_lang": "id",
+        "matched_language": "id"
+      },
+      {
+        "source": "app_store",
+        "id": "14131939537",
+        "country": "us",
+        "author": "La nanitaaaa",
+        "rating": 2,
+        "date": "2026-06-01T10:01:19-07:00",
+        "text": "Ahora las fotos quedan son efectos muy exagerados uno parece un muñeco de plástico, desenfoca mucho el fondo y a veces uno necesita mostrar elementos del fondo y no puede, los colores se ven muy falsos llevo dos años con la suscripción pero creo que ya no voy a pagar más porque no puedo usar ninguna de las imágenes que edito se ve muy fake",
+        "_lang": "es",
+        "matched_language": "es"
+      },
+      {
+        "source": "app_store",
         "id": "14270837846",
         "country": "mx",
         "author": "M&m2.347",
@@ -1632,14 +1786,47 @@
       },
       {
         "source": "app_store",
-        "id": "13198875545",
-        "country": "mx",
-        "author": "Sele85,",
-        "rating": 4,
-        "date": "2025-09-28T21:23:16-07:00",
-        "text": "La aplicación es fácil y muy rápida al crear imágenes,\nNo distorsiona y mejora la calidad, solo creo que el precio es elevado, ya que solo está la opción de pago por semana",
-        "_lang": "es",
-        "matched_language": "es"
+        "id": "14079972295",
+        "country": "de",
+        "author": "@Radiantbeauty",
+        "rating": 5,
+        "date": "2026-05-18T15:25:09-07:00",
+        "text": "Wer eine Fotobearbeitung sucht, ist hier genau richtig! - seitdem ich diese App habe nutze ich Sie fast Tag täglich, doch seitdem neuen Update trotz Abonnement funktioniert die App nicht mehr reibungslos, die Bilder werden haben plötzlich ein zu Hohen Kontrast, Bitte behebt dieses Problem.",
+        "_lang": "de",
+        "matched_language": "de"
+      },
+      {
+        "source": "app_store",
+        "id": "12886998650",
+        "country": "de",
+        "author": "-aaa1aaaa1",
+        "rating": 1,
+        "date": "2025-07-13T07:33:50-07:00",
+        "text": "Ich habe 1€ auf der Website bezahlt, sollte App runterladen Code einfügen um meine Bilder zu bekommen. Was ist? Es passierte nichts, musste trotzdem 10€ wieder für ein Abo abschließen. Also ich wurde reingelegt. Wahrscheinliche tausenden von Leuten 1€ abgezogen.!!!",
+        "_lang": "de",
+        "matched_language": "de"
+      },
+      {
+        "source": "app_store",
+        "id": "12367576011",
+        "country": "de",
+        "author": "Neudx",
+        "rating": 5,
+        "date": "2025-02-28T20:29:31-07:00",
+        "text": "Könnt ihr bitte den Abo 1 Monat machen weil eine Woche ist zu wenig ich würde mir kaufen wenn es ein Monat es das Abo soll kosten 15€",
+        "_lang": "de",
+        "matched_language": "de"
+      },
+      {
+        "source": "app_store",
+        "id": "11585291642",
+        "country": "de",
+        "author": "MarianW7559",
+        "rating": 1,
+        "date": "2024-08-07T23:32:30-07:00",
+        "text": "Bitte nicht kaufen. Das Abo lässt sich nicht beenden in der App",
+        "_lang": "de",
+        "matched_language": "de"
       },
       {
         "source": "app_store",
@@ -1676,36 +1863,27 @@
       },
       {
         "source": "app_store",
-        "id": "12886998650",
-        "country": "de",
-        "author": "-aaa1aaaa1",
-        "rating": 1,
-        "date": "2025-07-13T07:33:50-07:00",
-        "text": "Ich habe 1€ auf der Website bezahlt, sollte App runterladen Code einfügen um meine Bilder zu bekommen. Was ist? Es passierte nichts, musste trotzdem 10€ wieder für ein Abo abschließen. Also ich wurde reingelegt. Wahrscheinliche tausenden von Leuten 1€ abgezogen.!!!",
-        "_lang": "de",
-        "matched_language": "de"
-      },
+        "id": "13198875545",
+        "country": "mx",
+        "author": "Sele85,",
+        "rating": 4,
+        "date": "2025-09-28T21:23:16-07:00",
+        "text": "La aplicación es fácil y muy rápida al crear imágenes,\nNo distorsiona y mejora la calidad, solo creo que el precio es elevado, ya que solo está la opción de pago por semana",
+        "_lang": "es",
+        "matched_language": "es"
+      }
+    ],
+    "AI photo generation: couples / multi-person": [
       {
         "source": "app_store",
-        "id": "12367576011",
-        "country": "de",
-        "author": "Neudx",
+        "id": "12439946923",
+        "country": "nl",
+        "author": "Jannah Mel",
         "rating": 5,
-        "date": "2025-02-28T20:29:31-07:00",
-        "text": "Könnt ihr bitte den Abo 1 Monat machen weil eine Woche ist zu wenig ich würde mir kaufen wenn es ein Monat es das Abo soll kosten 15€",
-        "_lang": "de",
-        "matched_language": "de"
-      },
-      {
-        "source": "app_store",
-        "id": "11585291642",
-        "country": "de",
-        "author": "MarianW7559",
-        "rating": 1,
-        "date": "2024-08-07T23:32:30-07:00",
-        "text": "Bitte nicht kaufen. Das Abo lässt sich nicht beenden in der App",
-        "_lang": "de",
-        "matched_language": "de"
+        "date": "2025-03-19T12:32:08-07:00",
+        "text": "Remini is een leuke app, alleen vindt ik jammer dat je niet veel kan kiezen. Vooral met hoofddoek en koppel foto’s is er weinig keuze. Hopelijk komen er meer erbij.",
+        "_lang": "nl",
+        "matched_language": "nl"
       }
     ],
     "usage limits / free tier": [
@@ -1730,19 +1908,6 @@
         "text": "Çok severek kullanıyorum. Ücretsiz fotoğraf sayısını lütfen arttırın.  Bazen doğa fotoğraflarında netliği bozup pürüzsüz yapıyor bu hoşuma gitmiyor.Teşekkürler",
         "_lang": "tr",
         "matched_language": "tr"
-      }
-    ],
-    "AI photo generation: couples / multi-person": [
-      {
-        "source": "app_store",
-        "id": "12439946923",
-        "country": "nl",
-        "author": "Jannah Mel",
-        "rating": 5,
-        "date": "2025-03-19T12:32:08-07:00",
-        "text": "Remini is een leuke app, alleen vindt ik jammer dat je niet veel kan kiezen. Vooral met hoofddoek en koppel foto’s is er weinig keuze. Hopelijk komen er meer erbij.",
-        "_lang": "nl",
-        "matched_language": "nl"
       }
     ]
   }
